@@ -1,0 +1,44 @@
+aws iam create-role --role-name DEV_ROLE --assume-role-policy-document file://trust_policy_ec2.json
+
+aws iam create-policy --policy-name DevS3ReadAccess --policy-document file://dev_s3_read_access.json
+
+aws iam attach-role-policy --role-name DEV_ROLE --policy-arn "arn:aws:iam::980314412112:policy/DevS3ReadAccess"
+
+aws iam list-attached-role-policies --role-name DEV_ROLE
+
+aws iam create-instance-profile --instance-profile-name DEV_PROFILE
+
+aws iam add-role-to-instance-profile --instance-profile-name DEV_PROFILE --role-name DEV_ROLE
+
+aws iam get-instance-profile --instance-profile-name DEV_PROFILE
+
+aws ec2 associate-iam-instance-profile --instance-id i-0128b190d51495c44 --iam-instance-profile Name="DEV_PROFILE"
+
+aws ec2 describe-instances --instance-ids i-0128b190d51495c44 
+
+aws sts get-caller-identity
+
+aws iam update-policy --policy-id "ANPA6IP2K2RIMSCD2LZS6" --content "{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowUserToSeeBucketListInTheConsole",
+            "Action": ["s3:ListAllMyBuckets", "s3:GetBucketLocation"],
+            "Effect": "Allow",
+            "Resource": ["arn:aws:s2:::*"]
+        },
+        {
+            "Effect":"Allow",
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::cfst-3035-180c6ef313204fcca7583a386cb-s3bucketdev-k26071b2u480/*",
+                "arn:aws:s3:::cfst-3035-180c6ef313204fcca7583a386cb-s3bucketdev-k26071b2u480"
+            ]
+        }
+    ]
+}"
+
+aws s3 ls

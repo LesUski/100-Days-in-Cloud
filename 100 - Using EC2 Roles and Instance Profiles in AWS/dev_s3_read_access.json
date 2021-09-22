@@ -1,0 +1,22 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowUserToSeeBucketListInTheConsole",
+            "Action": ["s3:ListAllMyBuckets", "s3:GetBucketLocation"],
+            "Effect": "Allow",
+            "Resource": ["arn:aws:s3:::*"]
+        },
+        {
+            "Effect":"Allow",
+            "Action": [
+                "s3:Get*",
+                "s3:List*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::cfst-3035-180c6ef313204fcca7583a386cb-s3bucketdev-k26071b2u480/*",
+                "arn:aws:s3:::cfst-3035-180c6ef313204fcca7583a386cb-s3bucketdev-k26071b2u480"
+            ]
+        }
+    ]
+}
