@@ -3,6 +3,7 @@ Date: 2021-09-22
 
 <This lab is part of A Cloud Guru catalog>
 <https://learn.acloud.guru/handson/2eb1d816-31b5-4a2c-959e-b4e7140df731>
+![lab_diagram_Lab_-_Using_EC2_Roles_and_Instance_Profiles 001](https://user-images.githubusercontent.com/70897432/134418247-0e286b72-560d-4b6e-8cbb-8b6f44756c7f.png)
 
 Create a Trust Policy and Role Using the AWS CLI
 Obtain the labreferences.txt file from an S3 bucket provisioned with the lab.
