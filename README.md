@@ -26,11 +26,11 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#PaidAWSlearningoptions">Paid AWS learning options</a></li>
-        <li><a href="#Recommendedprerequisites">Recommended prerequisites</a></li>
+        <li><a href="#paid-AWS-learning-options">Paid AWS learning options</a></li>
+        <li><a href="#recommended-prerequisites">Recommended prerequisites</a></li>
       </ul>
     </li>
-    <li><a href="#List">List</a></li>
+    <li><a href="#list">List of labs</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
@@ -78,18 +78,18 @@ Here’s a list of services used as a source of labs:
     ```sh
    aws --version
    ```
-   * [configure](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html) you're AWS CLI with your credentials
+   * configure you're AWS CLI with your credentials, here's more [info](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
     ```sh
    aws configure
    ```
 
 
 <!-- USAGE EXAMPLES -->
-## List of labs accomplished
+## List of labs
 
 List of Labs in the repository (will be growing as time passes towards the end of 2021) in countdown order:
 * [Day 100 - Using EC2 Roles and Instance Profiles in AWS](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/100%20-%20Using%20EC2%20Roles%20and%20Instance%20Profiles%20in%20AWS)
-* [Day 99 - Deploy an Amazon RDS Multi-AZ and Read Replica in AWS]()
+* [Day 99 - Deploy an Amazon RDS Multi-AZ and Read Replica in AWS](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/99%20-%20Deploy%20an%20Amazon%20RDS%20Multi-AZ%20and%20Read%20Replica%20in%20AWS)
 
 
 <!-- LICENSE -->
