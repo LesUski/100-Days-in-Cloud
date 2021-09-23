@@ -68,19 +68,19 @@ _All the ids for resources are temporary values specific for the lab_
 ```sh
     aws rds promote-read-replica \
     --db-instance-identifier wordpress-rr
-    ```
+```
 * Check the hosted zone resource record sets
 ```sh
     aws route53 list-resource-record-sets --hosted-zone-id Z02351242NWTTQUT6NPRI
-    ```
+```
 * Get Read Replicas endpoint
 ```sh
 aws rds describe-db-instances --db-instance-identifier wordpress-rr
-    ```
+```
 * Create 'change-name.json' then change the record set in Route 53 hosted zone to the new db
 ```sh
     aws route53 change-resource-record-sets --hosted-zone-id Z02351242NWTTQUT6NPRI --change-batch file://change-name.json
-    ```
+```
 
 ### Acknowledgements
 * [A Cloud Guru](https://acloudguru.com/)
