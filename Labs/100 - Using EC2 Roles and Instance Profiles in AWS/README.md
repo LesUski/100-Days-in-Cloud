@@ -36,7 +36,7 @@
 * **EC2**
 
 ## Lab description
-This lab excercies folowing concepts with use of AWS CLI commands:
+This lab exercises folowing concepts with use of AWS CLI commands:
 * **Practice usage of AWS Identity and Access Management roles for Amazon Elastic Compute Cloud (EC2)**
 * **Create and assign IAM roles**
 * **Create and attach IAM policy**
@@ -56,8 +56,7 @@ This lab excercies folowing concepts with use of AWS CLI commands:
 22-09-2021
 
 ### Lab source
-This lab is part of A Cloud Guru catalog
-https://learn.acloud.guru/handson/2eb1d816-31b5-4a2c-959e-b4e7140df731
+This lab is part of [A Cloud Guru catalog](https://learn.acloud.guru/handson/2eb1d816-31b5-4a2c-959e-b4e7140df731)
 
 ### Lab steps
 Taken from [lab source](https://learn.acloud.guru/handson/2eb1d816-31b5-4a2c-959e-b4e7140df731)

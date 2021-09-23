@@ -1,0 +1,14 @@
+{
+	"Comment":"Updates CNAME to a specified value",
+	"Changes":[{
+		"Action":"UPSERT",
+		"ResourceRecordSet":{
+			"Name":"mydomain.local",
+			"Type":"CNAME",
+			"TTL":900, 
+			"ResourceRecords":[{
+				"Value": "wordpress-rr.csprn8cf8vxy.us-east-1.rds.amazonaws.com"
+			}]
+		}
+	}]
+}

@@ -1,0 +1,14 @@
+aws rds modify-db-instance --db-instance-identifier db-OBWWA4PQF2XPOBVZP7WQ6CUKGI --multi-az
+
+aws rds create-db-instance-read-replica --db-instance-identifier wordpress-rr --source-db-instance-identifier wordpress
+
+aws rds promote-read-replica \
+    --db-instance-identifier wordpress-rr
+
+aws rds describe-db-cluster-endpoints --db-cluster-identifier db-NY3J47VGBVILGPTLAASCMFREJY
+
+aws route53 list-resource-record-sets --hosted-zone-id Z02351242NWTTQUT6NPRI
+
+aws rds describe-db-instances --db-instance-identifier wordpress-rr
+
+aws route53 change-resource-record-sets --hosted-zone-id Z02351242NWTTQUT6NPRI --change-batch file://change-name.json
