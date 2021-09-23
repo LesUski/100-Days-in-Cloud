@@ -43,7 +43,7 @@
 ## About The Project
 
 <img src="/images/AmazonWebservices_Logo.png" alt="Logo" width="200" height="100">
-Idea is to cover as many branches of AWS in different labs, some in Management Console, some through AWS CLI. AWS features over 200 services so ther’s lots to lab on.
+Idea is to cover as many branches of AWS in different labs, some in Management Console, some through AWS CLI. AWS features over 200 services so there’s lots to lab on.
 
 ### Built With
 
