@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="https://https://github.com/CloudedThings/100-Days-in-Cloud">
-    <img src="/images/aws-labs-logo.png" alt="Logo" width="250" height="351">
+    <img src="/images/aws-labs-logo.png" alt="Logo" width="400" height="351">
   </a>
 
   <h3 align="center">100 days in Cloud</h3>
@@ -86,8 +86,8 @@ Here’s a list of services used as a source of labs:
 ## List of labs
 
 List of Labs in the repository (will be growing as time passes towards the end of 2021) in countdown order:
-* [Day 100 - Using EC2 Roles and Instance Profiles in AWS](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/100%20-%20Using%20EC2%20Roles%20and%20Instance%20Profiles%20in%20AWS)
-* [Day 99 - Deploy an Amazon RDS Multi-AZ and Read Replica in AWS](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/99%20-%20Deploy%20an%20Amazon%20RDS%20Multi-AZ%20and%20Read%20Replica%20in%20AWS)
+* [Day 100 - Using EC2 Roles and Instance Profiles in AWS](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/100%20-%20Using%20EC2%20Roles%20and%20Instance%20Profiles%20in%20AWS)
+* [Day 99 - Deploy an Amazon RDS Multi-AZ and Read Replica in AWS](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/99%20-%20Deploy%20an%20Amazon%20RDS%20Multi-AZ%20and%20Read%20Replica%20in%20AWS)
 
 
 ## License
