@@ -43,7 +43,8 @@ This lab exercises folowing concepts with use of AWS CLI commands:
 * **Updating the RDS endpoint in Route 53**
 
 ## Lab diagram
-![lab_diagram_Lab_-_Using_EC2_Roles_and_Instance_Profiles 001](https://user-images.githubusercontent.com/70897432/134418386-1c7fbf47-490c-4ffe-b78f-b13a312725d8.png)
+![lab99diagram](https://user-images.githubusercontent.com/70897432/134534449-3ead68bb-1bde-42fe-8579-11ba9cb4bcff.png)
+
 
 ### Lab files
 * AWS_CLI_commands.txt - contains used commands to perform project
