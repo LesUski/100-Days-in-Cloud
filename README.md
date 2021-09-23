@@ -30,7 +30,7 @@
         <li><a href="#recommended-prerequisites">Recommended prerequisites</a></li>
       </ul>
     </li>
-    <li><a href="#list">List of labs</a></li>
+    <li><a href="#list-of-labs">List of labs</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgements">Acknowledgements</a></li>
@@ -83,8 +83,6 @@ Here’s a list of services used as a source of labs:
    aws configure
    ```
 
-
-<!-- USAGE EXAMPLES -->
 ## List of labs
 
 List of Labs in the repository (will be growing as time passes towards the end of 2021) in countdown order:
@@ -92,7 +90,6 @@ List of Labs in the repository (will be growing as time passes towards the end o
 * [Day 99 - Deploy an Amazon RDS Multi-AZ and Read Replica in AWS](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/99%20-%20Deploy%20an%20Amazon%20RDS%20Multi-AZ%20and%20Read%20Replica%20in%20AWS)
 
 
-<!-- LICENSE -->
 ## License
 
 Distributed under the MIT License.
