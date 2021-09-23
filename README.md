@@ -1,7 +1,7 @@
 <br />
 <p align="center">
-  <a href="https://https://github.com/CloudedThings/100-Days-in-Cloud">
-    <img src="/images/aws-labs-logo.png" alt="Logo" width="400" height="351">
+  <a href="#list-of-labs">
+    <img src="/images/aws-labs-logo.png" alt="Logo" width="260" height="228">
   </a>
 
   <h3 align="center">100 days in Cloud</h3>
@@ -67,13 +67,15 @@ Here’s a list of services used as a source of labs:
 * [A Cloud Guru](https://acloudguru.com/browse-training?type=lab) - paid with some free options
 * [WhizLabs](https://play.whizlabs.com/) - paid with some free options
 * [Udemy course Ultimate AWS Certified Developer Associate 2021](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/?src=sac&kw=Ultimate+AWS+Certified+Developer+Associate+2021) - paid
+
+And some free ones:
 * [AWS Hands-On repository](https://aws.amazon.com/getting-started/hands-on/) - free
 * ['Be a better dev' YouTube channel](https://www.youtube.com/c/BeABetterDev) - free
 
 ### Recommended prerequisites
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/download) for writing JSON,YAML files or Lambda functions
-2. Install [AWS Command Line Interface](https://awscli.amazonaws.com/AWSCLIV2.msi) for command line labs
+2. Install AWS Command Line Interface [from here](https://awscli.amazonaws.com/AWSCLIV2.msi) for command line labs
    * verify the installation by running this command in Command Prompt or Terminal:
     ```sh
    aws --version
