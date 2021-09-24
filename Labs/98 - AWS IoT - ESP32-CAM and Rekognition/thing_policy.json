@@ -1,0 +1,40 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Effect": "Allow",
+        "Action": "iot:Connect",
+        "Resource": "arn:aws:iot:eu-central-1:797321539388:client/ESP32-cam"
+      },
+      {
+        "Effect": "Allow",
+        "Action": "iot:Subscribe",
+        "Resource": "arn:aws:iot:eu-central-1:797321539388:topicfilter/esp32/sub/data"
+      },
+      {
+        "Effect": "Allow",
+        "Action": "iot:Subscribe",
+        "Resource": "arn:aws:iot:eu-central-1:797321539388:topicfilter/esp32/sub/url"
+      },
+      {
+        "Effect": "Allow",
+        "Action": "iot:Receive",
+        "Resource": "arn:aws:iot:eu-central-1:797321539388:topic/esp32/sub/url"
+      },
+      {
+        "Effect": "Allow",
+        "Action": "iot:Receive",
+        "Resource": "arn:aws:iot:eu-central-1:797321539388:topic/esp32/sub/data"
+      },
+      {
+        "Effect": "Allow",
+        "Action": "iot:Publish",
+        "Resource": "arn:aws:iot:eu-central-1:797321539388:topic/esp32/pub/data"
+      },
+      {
+        "Effect": "Allow",
+        "Action": "iot:Publish",
+        "Resource": "arn:aws:iot:eu-central-1:797321539388:topic/esp32/pub/url"
+      }
+    ]
+  }
