@@ -47,6 +47,7 @@ In this lab an ESP32 with camera will connect to IoT Core, subsribe to a topic, 
 * **Creating presigned urls for S3 objects**
 
 ## Lab diagram
+![image](https://user-images.githubusercontent.com/70897432/134690420-f7120a4b-d96d-4fa4-8984-79f2d106a937.png)
 
 
 ### Lab date
@@ -75,7 +76,7 @@ In this lab an ESP32 with camera will connect to IoT Core, subsribe to a topic, 
   "ADA5MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6\n"
   "b24gUm9vdCBDQSAxMB4XDTE1MDUyNjAwMDAwMFoXDTM4MDExNzAwMDAwMFowOTEL\n"
 ```
-4. Create a policy for the device, [policy.json]()
+4. Create a policy for the device, [policy.json](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/Labs/98%20-%20AWS%20IoT%20-%20ESP32-CAM%20and%20Rekognition/thing_policy.json)
 ```sh
 {
   ...
@@ -115,8 +116,8 @@ In this lab an ESP32 with camera will connect to IoT Core, subsribe to a topic, 
       ]
       ```
 6. Create two Lambda functions:
-  * one to generate presigned url in S3 called [esp32-request-url.py]() and change it's policy and allow publishing in IoT and getting objects from S3 [esp32-request-url-policy.json]()
-  * second called [esp32-request-rekognition.py]() will get the object from S3 when triggered by IoT Rule and send it to Rekognition, then it'll publish result to topic 'esp32/sub/data'
+  * one to generate presigned url in S3 called [esp32-request-url.py](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/Labs/98%20-%20AWS%20IoT%20-%20ESP32-CAM%20and%20Rekognition/esp32-request-rekognition.py) and change it's policy and allow publishing in IoT and getting objects from S3 [esp32-request-url-policy.json]()
+  * second called [esp32-request-rekognition.py](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/Labs/98%20-%20AWS%20IoT%20-%20ESP32-CAM%20and%20Rekognition/esp32-request-rekognition.py) will get the object from S3 when triggered by IoT Rule and send it to Rekognition, then it'll publish result to topic 'esp32/sub/data'
 7. Create two Rules in IoT Core:
   * one with querry statement: 
   ```sh
