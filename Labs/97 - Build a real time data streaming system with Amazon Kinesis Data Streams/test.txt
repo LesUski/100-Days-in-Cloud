@@ -1,0 +1,4 @@
+This file will be processed by Lambda
+and send to Kinesis data stream
+consumer Lambdas will process it and log this text
+to the console
