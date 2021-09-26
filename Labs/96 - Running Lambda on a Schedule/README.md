@@ -38,7 +38,7 @@
 * **CloudWatch Events**
 
 ## Lab description
-Purpose of this lab is to create an CloudWatch Event Rule that will trigger the Lambda function on a schedule. Lambda will check status of an instance in the same region, and then change it. If instance is running it'll be stopped and vice versa.
+Purpose of this lab is to create an CloudWatch Event Rule that will trigger the Lambda function on a schedule. Lambda will check the status of an instance in the same region, and then change it. If instance is running it'll be stopped and vice versa.
 * **Creating Lambda functions**
 * **Creating CloudWatch Event Rules**
 * **Checking EC2 Instance status with Lambda function**

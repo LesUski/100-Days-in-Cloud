@@ -19,6 +19,7 @@ def lambda_handler(event, context):
         else:
             print("Please wait for the instance to be in stopped or running state")
         print("\n")
+        
     return {
         'statusCode': 200,
     }
