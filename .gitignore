@@ -2,3 +2,4 @@ certs/
 **/certs
 conf.h
 */conf.h
+**/RDS_DynamoDB_Backup
