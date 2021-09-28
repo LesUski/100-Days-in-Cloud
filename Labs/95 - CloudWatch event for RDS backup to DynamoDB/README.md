@@ -59,7 +59,7 @@ Purpose of this lab is to create an CloudWatch Event Rule that will trigger the 
 1. Create a Role in IAM, choose \*Lambda\* as \*trusted entity\*. Attach following policies:
 <img src="img/policies.png" alt="policy" width="255" height="100">
 2. Create a table in DynamoDB, give it a name, set a partition key.
-3. Create a database in RDS. Choose \*Standard create\*, \*MySQL\* as engine, **\*Free tier\*** as template, create user and password. As instance type choose **db.t2.micro**, grant it public access and assign the earlier created Security Group, rest leave as default. Under \*Additional Configurations\* give your database a name, and uncheck the \*Enable automated backups\*, leave rest as default.
+3. Create a database in RDS. Choose \*Standard create\*, \*MySQL\* as engine, **Free tier** as template, create user and password. As instance type choose **db.t2.micro**, grant it public access and assign the earlier created Security Group, rest leave as default. Under \*Additional Configurations\* give your database a name, and uncheck the \*Enable automated backups\*, leave rest as default.
 4. When the database becomes **Available** you can connect to the DB instance. I used MySQL Workbench. Get the endpoint and port form **Connectivity & security** fill in database details. In Workbench:
 <img src="img/workbench.png" alt="workbench" width="425" height="215">
 5. When connected paste the following MySQL command that will create a StudentDB with three values with three fields:
