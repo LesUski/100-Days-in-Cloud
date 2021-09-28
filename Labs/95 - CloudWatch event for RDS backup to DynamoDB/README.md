@@ -63,7 +63,8 @@ Purpose of this lab is to create an CloudWatch Event Rule that will trigger the 
 4. When the database becomes **Available** you can connect to the DB instance. I used MySQL Workbench. Get the endpoint and port form **Connectivity & security** fill in database details. In Workbench:
 <img src="img/workbench.png" alt="workbench" width="425" height="215">
 5. When connected paste the following MySQL command that will create a StudentDB with three values with three fields:
-```MySQL
+
+```
 CREATE DATABASE StudentDB;
 
 Use StudentDB;
@@ -84,7 +85,8 @@ INSERT INTO students(studentName, Course, Semester) VALUES ('Sebastian', 'Medici
 
 SELECT * FROM students;
 ```
-6. Create [Lambda](RDS_DynamoDB_Backup/lambda_func.py) function, in Python and attach earlier created Role. Upload the zip file and change values for your database, user and DynamoDB in the code.
+
+6. Create [Lambda](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/Labs/95%20-%20CloudWatch%20event%20for%20RDS%20backup%20to%20DynamoDB/lambda_function.py) function, in Python and attach earlier created Role. Upload the zip file and change values for your database, user and DynamoDB in the code.
 7. Create a CloudWach Event and choose *scheduled* every minute and Lambda as a trigger. This will call Lambda function and create backup into DynamoDB table.
 8. Efter at least one minute you should see that those first three values should be populated in table by Lambda function. You can run additional MySQL querries to add more values and they will eventually get copied to the table. To see the items you need to choose the created table then **Items summary** -> **View items** -> **Run**.
 9. Delete all the created resources to avoid any extra costs.
@@ -92,8 +94,7 @@ SELECT * FROM students;
 
  
 ### Lab files
-* lambda_role.json - policy attached to the Lambda execution Role, giving it wide permission on EC2
-* lambda_function.py - Lambda function triggered by CloudWatch Event, querries the RDS database and copies values into DynamoDB table
+* [lambda_function.py](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/Labs/95%20-%20CloudWatch%20event%20for%20RDS%20backup%20to%20DynamoDB/lambda_function.py) - Lambda function triggered by CloudWatch Event, querries the RDS database and copies values into DynamoDB table
 
 ### Acknowledgements
 * [whizlabs.com](https://www.whizlabs.com/)

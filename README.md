@@ -93,6 +93,7 @@ List of Labs in the repository (will be growing as time passes towards the end o
 * [Day 98 - AWS IoT - ESP32-CAM and Rekognition](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/98%20-%20AWS%20IoT%20-%20ESP32-CAM%20and%20Rekognition)
 * [Day 97 - Build a real time data streaming system with Amazon Kinesis Data Streams](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/97%20-%20Build%20a%20real%20time%20data%20streaming%20system%20with%20Amazon%20Kinesis%20Data%20Streams)
 * [Day 96 - Running Lambda on a Schedule](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/96%20-%20Running%20Lambda%20on%20a%20Schedule)
+* [Day 95 - CloudWatch event for RDS backup to DynamoDB](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/95%20-%20CloudWatch%20event%20for%20RDS%20backup%20to%20DynamoDB)
 * []()
 
 
