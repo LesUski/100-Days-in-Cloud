@@ -5,3 +5,4 @@ conf.h
 **/RDS_DynamoDB_Backup
 **/__pycache__
 **/demo-app
+**/secrets.py
