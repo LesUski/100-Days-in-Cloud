@@ -6,3 +6,4 @@ conf.h
 **/__pycache__
 **/demo-app
 **/secrets.py
+**/requirements.txt
