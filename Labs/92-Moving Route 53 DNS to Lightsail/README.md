@@ -81,11 +81,11 @@ Domains registered in Route 53 will have an automatically activated Hosted Zone,
 
 3. Add record of type **A record** leave subdomain field empty ant paste you staticIP adress in. Add another record of type **CNAME record** and as a subdomain type in **www** and make it point to your domain name. While here take note of the Name servers you'll need them later.
 
-   ![image-20210930150720264](img\image-20210930150720264.png)
+   ![image-20210930150720264](img/image-20210930150720264.png)
 
 4.  When done go to Route 53 then to Hosted Zones. If you haven't registered any records it will contain only NS (Name Server records) and SOA (star of authority). If you have registered your domain in hosted zone as I did it'll look something like this:
 
-   ![image-20210930145246814](img\image-20210930145246814.png)
+   ![image-20210930145246814](img/image-20210930145246814.png)
 
    Start with deleting both A and CNAME records and delete the hosted zone.
 
