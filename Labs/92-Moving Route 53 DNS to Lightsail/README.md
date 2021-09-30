@@ -75,21 +75,21 @@ Domains registered in Route 53 will have an automatically activated Hosted Zone,
 ---
 
 ### Lab steps
-1. Some pre-lab step include: [Register](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html) a domain in Route 53. Go to Route 53 -> Refistered domains -> register Domain. This obviously will come at a cost depending which Top Level Domain you choose. Then create Lightsail virtual private server (interchangably I call them Instanse, but they're not an EC2 Instance, you don't have to manage any hardware or worry about maintanance). Create a static IP. 
+1. Some pre-lab steps include: [Register](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register.html) a domain in Route 53. Go to Route 53 -> Registered domains -> Register Domain. This obviously will come at a cost depending on which Top Level Domain you choose. Then create a Lightsail virtual private server (interchangeably I call them Instance, but they're not an EC2 Instance, you don't have to manage any hardware or worry about maintenance). Create a static IP. 
 
-2. In Amazon Lightsail dashboard go to **Networking** and click on <img src="img\image-20210930144342057.png" alt="image-20210930144342057" style="zoom:67%;" /> enter the domain name you have registered and create the DNS zone.  
+2. In the Amazon Lightsail dashboard go to **Networking** and click on <img src="img\image-20210930144342057.png" alt="image-20210930144342057" style="zoom:67%;" /> enter the domain name you have registered and create the DNS zone.  
 
-3. Add record of type **A record** leave subdomain field empty ant paste you staticIP adress in. Add another record of type **CNAME record** and as a subdomain type in **www** and make it point to your domain name. While here take note of the Name servers you'll need them later.
+3. Add a record of type **A record** leave subdomain field empty and paste your staticIP address in. Add another record of type **CNAME record** and as a subdomain type in **www** and make it point to your domain name. While here take note of the Name servers you'll need them later.
 
    ![image-20210930150720264](img/image-20210930150720264.png)
 
-4.  When done go to Route 53 then to Hosted Zones. If you haven't registered any records it will contain only NS (Name Server records) and SOA (star of authority). If you have registered your domain in hosted zone as I did it'll look something like this:
+4.  When done go to Route 53 then to Hosted Zones. If you haven't registered any records it will contain only NS (Name Server records) and SOA (start of authority). If you have registered your domain in the hosted zone as I did it'll look something like this:
 
    ![image-20210930145246814](img/image-20210930145246814.png)
 
    Start with deleting both A and CNAME records and delete the hosted zone.
 
-5. Go to **Registered domains** open your domain and in the **Name servers** section choose *Add or edit name servers* here you need to paste it the server values from you hosted zone in Lightsail. This will allow the Lightsail DNS management of your domain instead of Route 53. More on this in [documentation](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-name-servers-glue-records.html#domain-name-servers-glue-records-adding-changing). :exclamation: Updating the domain registration might take several hours.
+5. Go to **Registered domains** open your domain and in the **Name servers** section choose *Add or edit name servers* here you need to paste the server values from your hosted zone in Lightsail. This will allow the Lightsail DNS management of your domain instead of Route 53. More on this in [documentation](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-name-servers-glue-records.html#domain-name-servers-glue-records-adding-changing). :exclamation: Updating the domain registration might take several hours.
 ---
 
 ### Lab files
