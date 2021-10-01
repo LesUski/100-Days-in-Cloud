@@ -75,7 +75,7 @@ aws ec2 create-vpc  --cidr-block 10.1.0.0/16 --region us-east-1
 ```
 ​	Copy and save the VPC ID
 
-![cli-vpc](img\cli-vpc.png)
+![cli-vpc](img/cli-vpc.png)
 
 5. Create a Subnet within the VPC
 
@@ -83,7 +83,7 @@ aws ec2 create-vpc  --cidr-block 10.1.0.0/16 --region us-east-1
    aws ec2 create-subnet --vpc-id vpc-076e268a59eb3b741 --cidr-block 10.1.1.0/24 --region us-east-1
    ```
 
-   Replace the VPC with yours. Note the SubnetID![vpc-subnet](img\vpc-subnet.png)
+   Replace the VPC with yours. Note the SubnetID![vpc-subnet](img/vpc-subnet.png)
 
 6.  Create an Internet Gateway
 
@@ -91,7 +91,7 @@ aws ec2 create-vpc  --cidr-block 10.1.0.0/16 --region us-east-1
    aws ec2 create-internet-gateway --region us-east-1
    ```
 
-   ![cli-ig](img\cli-ig.png)
+   ![cli-ig](img/cli-ig.png)
 
 7.  Attach Internet Gateway to VPC. Replace VPC and IG ids with yours
 
@@ -105,7 +105,7 @@ aws ec2 create-vpc  --cidr-block 10.1.0.0/16 --region us-east-1
    aws ec2 create-route-table --vpc-id vpc-076e268a59eb3b741 --region us-east-1
    ```
 
-   ![cli-rt](img\cli-rt.png)
+   ![cli-rt](img/cli-rt.png)
 
 9.  Create a public route in the Route table pointing to the Internet Gateway. Replace Route Table and Gateway ids with yours.
 
@@ -169,7 +169,7 @@ aws ec2 create-vpc  --cidr-block 10.1.0.0/16 --region us-east-1
     aws ec2 run-instances --image-id  ami-062f7200baf2fa504 --count 1 --instance-type t2.micro --key-name MyCLIKeyPair --region us-east-1  --security-group-id sg-0770cff403a4005c7 --user-data file://./data.txt --subnet-id subnet-0729e993842e07ad7
     ```
 
-    ![cliec2](img\cliec2.png)
+    ![cliec2](img/cliec2.png)
 
     Note the new EC2 ID.
 
@@ -179,7 +179,7 @@ aws ec2 create-vpc  --cidr-block 10.1.0.0/16 --region us-east-1
     aws ec2 allocate-address --domain vpc --region us-east-1
     ```
 
-    ![cliip](img\cliip.png)
+    ![cliip](img/cliip.png)
 
 17. Associate the Elastic IP Address with the EC2 Instance (with your IDs)
 
