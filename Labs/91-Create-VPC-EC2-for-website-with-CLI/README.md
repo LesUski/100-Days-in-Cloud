@@ -36,10 +36,10 @@
 ---
 
 ## Services Covered
-* <img src="C:\Users\lesze\AppData\Roaming\Typora\typora-user-images\image-20211001142144826.png" alt="image-20211001142144826" style="zoom:25%;" />  **Amazon EC2**
-* <img src="C:\Users\lesze\AppData\Roaming\Typora\typora-user-images\image-20211001142231120.png" alt="image-20211001142231120" style="zoom:45%;" /> **Elastic IP address**
-* <img src="C:\Users\lesze\AppData\Roaming\Typora\typora-user-images\image-20211001142338737.png" alt="image-20211001142338737" style="zoom:25%;" /> **AWS CLI**
-* <img src="C:\Users\lesze\AppData\Roaming\Typora\typora-user-images\image-20211001142430577.png" alt="image-20211001142430577" style="zoom:43%;" /> **Internet Gateway**
+* ![image](https://user-images.githubusercontent.com/70897432/135623547-63ba4463-43b1-48d3-8308-e1423643f54c.png) **Amazon EC2**
+* ![image](https://user-images.githubusercontent.com/70897432/135623576-648d6150-f834-493a-ac6c-8ddabc01fc70.png) **Elastic IP address**
+* ![image](https://user-images.githubusercontent.com/70897432/135623647-a86292cc-fb8a-49be-b5ee-e5a8a426ad0e.png) **AWS CLI**
+* ![image-20211001142430577](https://user-images.githubusercontent.com/70897432/135623790-dd0ac096-d0a0-4bb3-a0fd-b8e619c6139b.png)**Internet Gateway**
 
 ---
 
