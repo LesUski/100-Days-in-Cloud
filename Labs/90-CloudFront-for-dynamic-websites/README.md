@@ -38,9 +38,8 @@
 ---
 
 ## Services Covered
-*  <img src="C:\Users\lesze\OneDrive\Documents\AWS\100-Days-in-Cloud\100-Days-in-Cloud\images\AmazonEC2.png" alt="AmazonEC2" style="zoom:100%;" />**Amazon EC2**
-* ![cloudfront](C:\Users\lesze\OneDrive\Documents\AWS\100-Days-in-Cloud\100-Days-in-Cloud\images\cloudfront.png) **CloudFront**
-*  ![ELB](C:\Users\lesze\OneDrive\Documents\AWS\100-Days-in-Cloud\100-Days-in-Cloud\images\ELB.png) **ELB**
+*  ![cloudfront](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/cloudfront.png) **CloudFront**
+*  ![ELB](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/ELB.png) **ELB**
 
 ---
 
