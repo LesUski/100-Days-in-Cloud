@@ -39,8 +39,8 @@
 ---
 
 ## Services Covered
-*  ![API](images\Api_Gateway.png) **Amazon API Gateway**
-*  ![lambda](images/AWS_Lambda.png) **Lambda**
+*  ![API](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/apigateway.png) **Amazon API Gateway**
+*  ![lambda](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/AWS_Lambda.png) **Lambda**
 
 ---
 
