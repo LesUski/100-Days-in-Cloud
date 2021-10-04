@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="img/">
-    <img src="img/diagram.png" alt="cloudofthings" width="862" height="542">
+    <img src="img/diagram.png" alt="cloudofthings" width="637" height="590">
   </a>
 
 
