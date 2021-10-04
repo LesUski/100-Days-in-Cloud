@@ -39,7 +39,7 @@
 ---
 
 ## Services Covered
-*  ![dynamodb](C:\Users\lesze\OneDrive\Documents\AWS\100-Days-in-Cloud\100-Days-in-Cloud\images\dynamodb.png)**DynamoDB**
+*  ![dynamodb](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/dynamodb.pngg)**DynamoDB**
 *  ![lambda](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/AWS_Lambda.png) **Lambda**
 
 ---
