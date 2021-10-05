@@ -94,7 +94,7 @@ In this lab I will create a backend of a website counter. It'll be backed with D
    }
    ```
 
-   As a safty measure create **Environment variable** for you database name under the **Configuration** tab.
+   As a safety measure create **Environment variable** for you database name under the **Configuration** tab.
 
    ![env](img/env.png)
 
