@@ -96,7 +96,7 @@ In this lab I will create a backend of a website counter. It'll be backed with D
 
    As a safty measure create **Environment variable** for you database name under the **Configuration** tab.
 
-   ![env](img\env.png)
+   ![env](img/env.png)
 
    The following code will increment the _visits_ attribute each time the function is invoked and return the latest value. It includes the HTTP headers for the API calls.
 
