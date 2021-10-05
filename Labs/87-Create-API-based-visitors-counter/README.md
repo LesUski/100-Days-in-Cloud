@@ -96,7 +96,7 @@ In this lab I will create a backend of a website counter. It'll be backed with D
 
    As a safty measure create **Environment variable** for you database name under the **Configuration** tab.
 
-   ![env](C:\Users\lesze\OneDrive\Documents\AWS\100-Days-in-Cloud\100-Days-in-Cloud\Labs\87-Create-API-based-visitors-counter\img\env.png)
+   ![env](img\env.png)
 
    The following code will increment the _visits_ attribute each time the function is invoked and return the latest value. It includes the HTTP headers for the API calls.
 
@@ -155,17 +155,17 @@ In this lab I will create a backend of a website counter. It'll be backed with D
 
 4. Deploy the API. From **Actions** drop-down menu click on **Deploy API**. You will see the **Invoke URL**, you can copy it and test it with a tool like Postman. There's not much going on there yet, but the API responds with the latest value:
 
-   ![postman](C:\Users\lesze\OneDrive\Documents\AWS\100-Days-in-Cloud\100-Days-in-Cloud\Labs\87-Create-API-based-visitors-counter\img\postman.png)
+   ![postman](img/postman.png)
 
    The response is obviously in line with the item value in the table:
 
-   ![table2](C:\Users\lesze\OneDrive\Documents\AWS\100-Days-in-Cloud\100-Days-in-Cloud\Labs\87-Create-API-based-visitors-counter\img\table2.png)
+   ![table2](img/table2.png)
 
    I will include this on my website in upcoming lab. 
 ---
 ### Lab files
 
-* [lambda.py]()
+* 
 
 ---
 
