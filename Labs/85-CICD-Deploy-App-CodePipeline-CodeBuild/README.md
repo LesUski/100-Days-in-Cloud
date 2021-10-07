@@ -38,17 +38,17 @@
 ---
 
 ## Services Covered
-*  ![ElasticBeanstalk](C:\Users\lesze\OneDrive\Documents\AWS\100-Days-in-Cloud\100-Days-in-Cloud\images\ElasticBeanstalk.png) **Elastic Beanstalk**
+*  ![ElasticBeanstalk](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/ElasticBeanstalk.png) **Elastic Beanstalk**
 
-* ![CodeCommit](C:\Users\lesze\OneDrive\Documents\AWS\100-Days-in-Cloud\100-Days-in-Cloud\images\CodeCommit.png)**CodeCommit**
+* ![CodeCommit](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CodeCommit.png)**CodeCommit**
 
-* ![CodeBuild](C:\Users\lesze\OneDrive\Documents\AWS\100-Days-in-Cloud\100-Days-in-Cloud\images\CodeBuild.png)**CodeBuild**
-* ![CodePipline](C:\Users\lesze\OneDrive\Documents\AWS\100-Days-in-Cloud\100-Days-in-Cloud\images\CodePipline.png)**CodePipeline**
+* ![CodeBuild](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CodeBuild.png)**CodeBuild**
+* ![CodePipline](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CodePipline.png)**CodePipeline**
 
 ---
 
 ## Lab description
-This is a starting point for learning path of CICD practises. In this lab I will deploy a node.js app in Elastic Beanstalk environment through CodeCommit, CodePipline and CodeBuild tools.
+This is a starting point for the learning path of CICD practices. In this lab I will deploy a node.js app in Elastic Beanstalk environment through CodeCommit, CodePipline and CodeBuild tools.
 
 
 * **Create and deploy Elastic Beanstalk web server app**
@@ -71,23 +71,23 @@ This is a starting point for learning path of CICD practises. In this lab I will
 ---
 
 ### Lab steps
-1. To start with, create a code repository in **CodeCommit**. You want to be able to commit your code using git, for that you user needs **HTTPS Git credentials for AWS CodeCommit** set up in **IAM Management Console**. While in there, choose you user and generate credentials:
+1. To start with, create a code repository in **CodeCommit**. You want to be able to commit your code using git, for that your user needs **HTTPS Git credentials for AWS CodeCommit** set up in **IAM Management Console**. While in there, choose your user and generate credentials:
 
    ![gitcredentials](img/gitcredentials.png)
 
-   Save them and have at hand, you'll need them to log in soon. Open git bash locally in your working folder and initiate git
+   Save them and have them at hand, you'll need them to log in soon. Open git bash locally in your working folder and initiate git
 
    ```bash
    git init
    ```
 
-   then copy the clone command from you CodeCommit repository. It'll be empty at the moment by it allow you to log in and set up the remote respository for you local git.
+   then copy the clone command from your CodeCommit repository. It'll be empty at the moment by it allow you to log in and set up the remote repository  for you local git.
 
 2. Create an **Elastic Beanstalk** environment. Choose **Web server environment** because it'll be hosting a node.js app. Give it a name, you might use some domain name, choose node.js as platform and for now choose sample application, we'll be replacing it with our code using CodePipline. When created continue to the next step.
 
 3. My application is just a simple website with [index.html](./index.html), [package.json](./package.json) and [app.js](./app.js). Push those files to the CodeCommit repository. 
 
-4. Create a Pipline in **CodePipline**. Attach a new role that will allow pipline to create and modify resources, use the default if you don't have your own. As **Source provider** choose AWS CodeCommit, and the repository created earlier. Skip the **Build provider** section for now. And as **Deploy provider** choose Elastic Beanstalk and the application created earlier. When you start it it should get the source code from CodeCommit and use it to deploy Elastic Beanstalk application.
+4. Create a Pipline in **CodePipeline**. Attach a new role that will allow pipeline to create and modify resources, use the default if you don't have your own. As **Source provider** choose AWS CodeCommit, and the repository created earlier. Skip the **Build provider** section for now. And as **Deploy provider** choose Elastic Beanstalk and the application created earlier. When you start it it should get the source code from CodeCommit and use it to deploy Elastic Beanstalk application.
 
    ![](img/pipline.png)
 
@@ -95,13 +95,13 @@ This is a starting point for learning path of CICD practises. In this lab I will
 
    ![ebapp](img/ebapp.png)
 
-5. Now test if the pipline works. Change some parameter in index.html, for example background color and push the updated file to repository. It'll autmatically will trigger a deployment of changed code and when done, refresh EB app site and see the results:
+5. Now test if the pipeline works. Change some parameters in index.html, for example background color and push the updated file to the repository. It'll automatically will trigger a deployment of changed code and when done, refresh EB app site and see the results:
 
    ![Ebapp](img/ebappafter.png)
 
-   Maybe that's not much but it shows how easy it is to start CICD developement with CodePipline.
+   Maybe that's not much but it shows how easy it is to start CICD development with CodePipline.
    
-6. Next step is to create a build project with **CodeBuild**. The source code will still be the same **CodeCommit repository**, Environment will be a **Managed image** of type Ubuntu, and **Buildspec** will be a file located in repository's root folder. Befor starting that build continue to step 7.
+6. Next step is to create a build project with **CodeBuild**. The source code will still be the same **CodeCommit repository**, Environment will be a **Managed image** of type Ubuntu, and **Buildspec** will be a file located in the repository's root folder. Before starting that build continue to step 7.
 
 7. In your local code source folder create a yaml file called **buildspec.yml**:
 
@@ -127,7 +127,7 @@ This is a starting point for learning path of CICD practises. In this lab I will
              - echo "this is post build phase"
    ```
 
-   This simple code does a check on the index.html file and looks for a word *Congratulations*  if the check passes then it'll continue with the build. Commit the new file and push it to the repository.
+   This simple code does a check on the index.html file and looks for the word *Congratulations*  if the check passes then it'll continue with the build. Commit the new file and push it to the repository.
 
 8. **Start build** of the build project in CodeBuild. And since the word *Congratulations* is indeed in the source file the build succeeded:
 
@@ -145,7 +145,7 @@ This is a starting point for learning path of CICD practises. In this lab I will
 
    Add action group and choose **CodeBuild** as action provider, input artifacts set as *SourceArtifact*. Now if changes are made that remove word *Congratulations* the build will fail. 
 
-   <img src="C:\Users\lesze\OneDrive\Documents\AWS\100-Days-in-Cloud\100-Days-in-Cloud\Labs\85-CICD-Deploy-App-CodePipeline-CodeBuild\img\finalpipeline.png" alt="pipeline" style="zoom:75%;" />
+   <img src="img/finalpipeline.png" alt="pipeline" style="zoom:75%;" />
 
    
 
