@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="img/">
-    <img src="https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/Labs/87-Create-API-based-visitors-counter/img" alt="cloudofthings" width="741" height="332">
+    <img src="img/diagram.png" alt="cloudofthings" width="781" height="641">
   </a>
 
   <h3 align="center">100 days in Cloud</h3>
