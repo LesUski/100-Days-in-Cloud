@@ -1,7 +1,7 @@
 <br />
 <p align="center">
   <a href="#list-of-labs">
-    <img src="/images/aws-labs-logo.png" alt="Logo" width="260" height="228">
+    <img src="/images/aws-labs-logo.png" alt="Logo" width="664" height="377">
   </a>
 
   <h3 align="center">100 days in Cloud</h3>
@@ -26,7 +26,7 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#paid-AWS-learning-options">Paid AWS learning options</a></li>
+        <li><a href="#AWS-learning-options">AWS learning options</a></li>
         <li><a href="#recommended-prerequisites">Recommended prerequisites</a></li>
       </ul>
     </li>
@@ -43,7 +43,7 @@
 ## About The Project
 
 <img src="/images/AmazonWebservices_Logo.png" alt="Logo" width="200" height="100">
-Idea is to cover as many branches of AWS in different labs, some in Management Console, some through AWS CLI. AWS features over 200 services so there’s lots to lab on.
+Idea is to cover as many AWS architectures and services as possible in different labs, some in Management Console, some through AWS CLI. AWS features over 200 services so there’s lots to lab on. Great deal of labs is me working on my website, other comes from labs providers.
 
 ### Built With
 
@@ -57,7 +57,7 @@ Idea is to cover as many branches of AWS in different labs, some in Management C
 ## Getting Started
 
 To get started with AWS you'll either create a new [Free Tier](https://aws.amazon.com/free/) account or start
-one of the paid services that offer labs and sandboxes. You’ll find some examples in <a href="#Paid AWS learning options">Paid AWS learning options</a> section.
+one of the paid services that offer labs and sandboxes. You’ll find some examples in <a href="#AWS learning options">Paid AWS learning options</a> section.
 The advantage of the paid services is that you’ll get the labs with clear instructions, in some cases guidance and a sandbox, that is provided AWS account where you can deploy services without worrying about additional costs.
 
 
@@ -94,7 +94,20 @@ List of Labs in the repository (will be growing as time passes towards the end o
 * [Day 97 - Build a real time data streaming system with Amazon Kinesis Data Streams](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/97%20-%20Build%20a%20real%20time%20data%20streaming%20system%20with%20Amazon%20Kinesis%20Data%20Streams)
 * [Day 96 - Running Lambda on a Schedule](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/96%20-%20Running%20Lambda%20on%20a%20Schedule)
 * [Day 95 - CloudWatch event for RDS backup to DynamoDB](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/95%20-%20CloudWatch%20event%20for%20RDS%20backup%20to%20DynamoDB)
-* []()
+* [96 - Running Lambda on a Schedule](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/96%20-%20Running%20Lambda%20on%20a%20Schedule)
+* [95 - CloudWatch event for RDS backup to DynamoDB](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/95%20-%20CloudWatch%20event%20for%20RDS%20backup%20to%20DynamoDB)
+* [94-React-App-On-S3-and-CloudFront](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/94-React-App-On-S3-and-CloudFront)
+* [93-Docker-Flask-App-with-Aurora](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/93-Docker-Flask-App-with-Aurora)
+* [92-Moving Route 53 DNS to Lightsail](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/92-Moving%20Route%2053%20DNS%20to%20Lightsail)
+* [91-Create-VPC-EC2-for-website-with-CLI](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/91-Create-VPC-EC2-for-website-with-CLI)
+* [90-CloudFront-for-dynamic-websites](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/90-CloudFront-for-dynamic-websites)
+* [89-API-Gateway-with-parameters](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/89-API-Gateway-with-parameters)
+* [88-DynamoDB-Stream-using-Lambda](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/88-DynamoDB-Stream-using-Lambda)
+* [87-Create-API-based-visitors-counter](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/87-Create-API-based-visitors-counter)
+* [86-JavaScript-Visitors-Counter-with-API](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/86-JavaScript-Visitors-Counter-with-API)
+* [85-CICD-Deploy-App-CodePipeline-CodeBuild](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/85-CICD-Deploy-App-CodePipeline-CodeBuild)
+* [84-Static-Website-with-CloudFront-Distribution](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/84-Static-Website-with-CloudFront-Distribution)
+
 
 
 ## License
