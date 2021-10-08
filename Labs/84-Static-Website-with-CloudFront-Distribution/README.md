@@ -36,11 +36,11 @@
 ---
 
 ## Services Covered
-* ![cloudfront](/images/CloudFront.png) **CloudFront**
+* ![cloudfront](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/cloudfront.png) **CloudFront**
 
-* ![CM](./images/CertificateManager.png) **Certificate Manager**
+* ![CM](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CertificateManager.png) **Certificate Manager**
 
-* ![LightSail](./images/LightSail.png) **LightSail**
+* ![LightSail](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/LightSail.png) **LightSail**
 
 ---
 
