@@ -40,15 +40,15 @@
 ## Services Covered
 *  ![ElasticBeanstalk](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/ElasticBeanstalk.png) **Elastic Beanstalk**
 
-* ![CodeCommit](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CodeCommit.png)**CodeCommit**
+* ![CodeCommit](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CodeCommit.png) **CodeCommit**
 
-* ![CodeBuild](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CodeBuild.png)**CodeBuild**
-* ![CodePipline](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CodePipline.png)**CodePipeline**
+* ![CodeBuild](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CodeBuild.png) **CodeBuild**
+* ![CodePipline](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CodePipline.png) **CodePipeline**
 
 ---
 
 ## Lab description
-This is a starting point for the learning path of CICD practices. In this lab I will deploy a node.js app in Elastic Beanstalk environment through CodeCommit, CodePipline and CodeBuild tools.
+This is a starting point for the learning path of CICD practices. In this lab I will deploy a node.js app in Elastic Beanstalk environment through CodeCommit, CodePipeline and CodeBuild tools.
 
 
 * **Create and deploy Elastic Beanstalk web server app**
@@ -87,7 +87,7 @@ This is a starting point for the learning path of CICD practices. In this lab I 
 
 3. My application is just a simple website with [index.html](./index.html), [package.json](./package.json) and [app.js](./app.js). Push those files to the CodeCommit repository. 
 
-4. Create a Pipline in **CodePipeline**. Attach a new role that will allow pipeline to create and modify resources, use the default if you don't have your own. As **Source provider** choose AWS CodeCommit, and the repository created earlier. Skip the **Build provider** section for now. And as **Deploy provider** choose Elastic Beanstalk and the application created earlier. When you start it it should get the source code from CodeCommit and use it to deploy Elastic Beanstalk application.
+4. Create a Pipeline in **CodePipeline**. Attach a new role that will allow pipeline to create and modify resources, use the default if you don't have your own. As **Source provider** choose AWS CodeCommit, and the repository created earlier. Skip the **Build provider** section for now. And as **Deploy provider** choose Elastic Beanstalk and the application created earlier. When you start it it should get the source code from CodeCommit and use it to deploy Elastic Beanstalk application.
 
    ![](img/pipline.png)
 
@@ -99,7 +99,7 @@ This is a starting point for the learning path of CICD practices. In this lab I 
 
    ![Ebapp](img/ebappafter.png)
 
-   Maybe that's not much but it shows how easy it is to start CICD development with CodePipline.
+   Maybe that's not much but it shows how easy it is to start CICD development with CodePipeline.
    
 6. Next step is to create a build project with **CodeBuild**. The source code will still be the same **CodeCommit repository**, Environment will be a **Managed image** of type Ubuntu, and **Buildspec** will be a file located in the repository's root folder. Before starting that build continue to step 7.
 
@@ -120,7 +120,7 @@ This is a starting point for the learning path of CICD practices. In this lab I 
        build:
            commands:
              - echo "building block phase"
-             - echo "reun some tests"
+             - echo "run some tests"
              - grep -Fq "Congratulations" index.html
        post_build:
            commands:
