@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="img/">
-    <img src="img/diagram.png" alt="cloudofthings" width="755" height="504">
+    <img src="img/diagram.png" alt="cloudofthings" width="652" height="272">
   </a>
 
   <h3 align="center">100 days in Cloud</h3>
@@ -38,9 +38,9 @@
 ## Services Covered
 * ![cloudformation](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/cloudfront.png) **CloudFormation**
 
-* ![s3](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CertificateManager.png) **S3**
+* ![s3](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/S3.png) **S3**
 
-* ![ec2](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/LightSail.png) **EC2**
+* ![ec2](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/AmazonEC2.png) **EC2**
 
 ---
 
