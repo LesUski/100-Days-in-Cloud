@@ -37,7 +37,7 @@
 ---
 
 ## Services Covered
-* ![lambda](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/lambda.png) **Lambda**
+* ![lambda](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/AWS_Lambda.png) **Lambda**
 
 * ![s3](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/S3.png) **S3**
 
@@ -122,7 +122,9 @@ The purpose of this lab is to create a chain of events. Messages send to a SQS Q
 
 5. In the Lambda **Configuration** tab go to **Triggers** and choose the created queue.
 
-6. In SQS send a message to the queue. It should trigger execution of Lambda function and store that message to S3.
+6. In SQS send a message to the queue.
+![sqs](img/message.png)
+ It should trigger execution of Lambda function and store that message to S3.
 
    ![s3](img/s3.png)
 
