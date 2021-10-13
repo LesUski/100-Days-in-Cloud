@@ -48,7 +48,7 @@ This labs walks through a process of creating a two-stage pipeline that uses sam
 
 
 * **Launch EC2 Instance**
-* **SSH to Instance, install CodeDeploy Agent **
+* **SSH to Instance, install CodeDeploy Agent**
 * **Create CodeDeploy application and Deployment**
 * **Create a CodePipeline pipeline and test application**
 
@@ -66,7 +66,7 @@ This labs walks through a process of creating a two-stage pipeline that uses sam
 ---
 
 ### Lab steps
-1. Start with launching an EC2 Instance of type t2.micro with Amazon Linux. It will need a IAM Role that will allow CodeDeploy to performa action on it and access to S3. Create a new Security Group and allow HTTP connections from *anywhere*. When the instance's status cahnges to *Running* note down its the IPv4 Public IP Address.
+1. Start with launching an EC2 Instance of type t2.micro with Amazon Linux. It will need a IAM Role that will allow CodeDeploy to perform a action on it and access to S3. Create a new Security Group and allow HTTP connections from *anywhere*. When the instance's status changes to *Running* note down its the IPv4 Public IP Address.
 
 2. SSH into EC2 Instance. Instal AWS CLI and CodeDeploy Agent. Switch to root user:
 
@@ -108,7 +108,7 @@ This labs walks through a process of creating a two-stage pipeline that uses sam
 
 3. Upload a [sample app](src/SampleApp_Linux.zip) to a S3 bucket. 
 
-4. Create a CodeDeploy application and Depolyment group. Start with creating application and chooose *EC2/On-premises* as platform. Create a deployment group and choose the service role from drop-dpwn menu. In **Environment configuration** choose Amazon EC2 instances and since CodeDeploy Agent is already install choose *Never* in **Agent configuration**. And uncheck **Load balancer**.
+4. Create a CodeDeploy application and Deployment group. Start with creating application and choose *EC2/On-premises* as platform. Create a deployment group and choose the service role from drop-down menu. In **Environment configuration** choose Amazon EC2 instances and since CodeDeploy Agent is already install choose *Never* in **Agent configuration**. And uncheck **Load balancer**.
 
 5. Create a pipeline and deploy application on the instance in CodePipeline. In pipeline settings choose *New service role* in **Advanced settings** in *Artifact store* choose *Custom location* and provide name of the bucket with sample application. In next step choose Amazon S3 as a source provider and uploaded zip file. Skip the build stage, and as **Deploy provider** choose AWS CodeDeploy, created app and Deployment. Click on Create, this will run the pipeline.
 
@@ -118,7 +118,7 @@ This labs walks through a process of creating a two-stage pipeline that uses sam
 
 <img src="img/final.png" alt="final" style="zoom:75%;" />
 
-7. Time for clean-up. Delete the CodeDepoly application, terminate the EC2 Instance.
+7. Time for clean-up. Delete the CodeDeploy application, terminate the EC2 Instance.
 
 ---
 ### Lab files
