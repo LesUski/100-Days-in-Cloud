@@ -38,7 +38,7 @@
 ## Services Covered
 * ![ALB](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/ALB.png) **Application Load Balancer**
 * ![CodeDeploy](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CodeDeploy.png) **CodeDeploy**
-* ![CodePipeline](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/ECS.png) **Amazon ECS**
+* ![ECS](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/ECS.png) **Amazon ECS**
 * ![CloudShell](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CloudShell.png) **CloudShell**
 * ![CloudWatch](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CloudWatch.png) **CloudWatch**
 
