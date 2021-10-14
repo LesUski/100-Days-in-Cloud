@@ -40,6 +40,7 @@
 * ![CodeDeploy](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CodeDeploy.png) **CodeDeploy**
 * ![ECS](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/ECS.png) **Amazon ECS**
 * ![CloudShell](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CloudShell.png) **CloudShell**
+* ![Lambda](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/AWS_Lambda.png) **CloudShell**
 * ![CloudWatch](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CloudWatch.png) **CloudWatch**
 
 ---
