@@ -36,7 +36,7 @@
 * **Route 53**
 
 ## Lab description
-This lab exercises folowing concepts with use of AWS CLI commands:
+This lab exercises following concepts with use of AWS CLI commands:
 * **Creating RDS Read Replicas**
 * **Enabling Multi-AZ and backups**
 * **Promoting a read replica**
