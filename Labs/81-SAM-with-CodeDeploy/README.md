@@ -8,7 +8,7 @@
   <h3 align="center">100 days in Cloud</h3>
 
 <p align="center">
-    Using SAM update Lambda funcions with CodeDeploy
+    Using SAM update Lambda functions with CodeDeploy
     <br />
     Lab 81
     <br />
@@ -85,7 +85,7 @@ Using SAM deploy new version of Lambda using CodeDeploy. The CodeDeploy Canary D
            Type: Canary10Percent10Minutes
    ```
 
-   This will use CodeDeploy to switch from aliases of Lambda function in Canary type of deployement.
+   This will use CodeDeploy to switch from aliases of Lambda function in Canary type of deployment.
 
 4. Re-run sam build after the code update.
 
@@ -99,13 +99,13 @@ Using SAM deploy new version of Lambda using CodeDeploy. The CodeDeploy Canary D
    sam deploy --guided
    ```
 
-   This will create a changeset in CloudFrotmation and ask if you want to deploy all of the resources:
+   This will create a changeset in CloudFormation and ask if you want to deploy all of the resources:
 
    ![changeset](img/cloudformation.png)
 
    So now Lambda function, API, CodeDeploy, IAM has been deployed. This environment is up and running.
 
-6. Time to make some changes to the Lambda fuction code. Then again run the sam commands and deploy the updated package. When checking if the CodeDeploy Canary deployment is in progress it show that indeed it is, which will take 10 minutes as stated in sam template:
+6. Time to make some changes to the Lambda function code. Then again run the sam commands and deploy the updated package. When checking if the CodeDeploy Canary deployment is in progress it show that indeed it is, which will take 10 minutes as stated in sam template:
 
    ![codedeploy](img/codedeploy.png)
 

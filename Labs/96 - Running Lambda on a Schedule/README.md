@@ -59,7 +59,7 @@ Purpose of this lab is to create an CloudWatch Event Rule that will trigger the 
 ### Lab steps
 1. Create an EC2 Instance of type 2.micro, with attached Security Group with allowed Ingress rules for SSH, HTTP and HTTPS.
 2. In IAM create role for Lambda Service with permissions to "Allow" wide action on resources set up in [policy](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/Labs/96%20-%20Running%20Lambda%20on%20a%20Schedule/lambda_role.json).
-3. Create [Lambda function](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/Labs/96%20-%20Running%20Lambda%20on%20a%20Schedule/lambda_func.py) with Pyhon as runtime and attach the above mentioned Role to it. This function will check status of Instances and change it accordingly, if it's running it will stop the instance and so on.
+3. Create [Lambda function](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/Labs/96%20-%20Running%20Lambda%20on%20a%20Schedule/lambda_func.py) with Python as runtime and attach the above mentioned Role to it. This function will check status of Instances and change it accordingly, if it's running it will stop the instance and so on.
 4. In CloudWatch create a Rule in Events with either fixed rate or a CRON job. Add the Lambda function as target, this will trigger function.
 5. Edit created Lambda Configuration and set the Timeout to 1 minute. 
  

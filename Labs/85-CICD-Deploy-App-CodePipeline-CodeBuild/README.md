@@ -11,7 +11,7 @@
     CICD - Continuous Integration Continuous Delivery
 </p>  
 <p align="center">
-    Deploying an node.js app on Elastic Beanstalk with CodeCommit, CodePipeline, CodeBuild
+    Deploying a node.js app on Elastic Beanstalk with CodeCommit, CodePipeline, CodeBuild
     <br />
     Lab 85
     <br />
@@ -43,7 +43,7 @@
 * ![CodeCommit](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CodeCommit.png) **CodeCommit**
 
 * ![CodeBuild](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CodeBuild.png) **CodeBuild**
-* ![CodePipline](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CodePipline.png) **CodePipeline**
+* ![CodePipeline](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CodePipline.png) **CodePipeline**
 
 ---
 
@@ -83,7 +83,7 @@ This is a starting point for the learning path of CICD practices. In this lab I 
 
    then copy the clone command from your CodeCommit repository. It'll be empty at the moment by it allow you to log in and set up the remote repository  for you local git.
 
-2. Create an **Elastic Beanstalk** environment. Choose **Web server environment** because it'll be hosting a node.js app. Give it a name, you might use some domain name, choose node.js as platform and for now choose sample application, we'll be replacing it with our code using CodePipline. When created continue to the next step.
+2. Create an **Elastic Beanstalk** environment. Choose **Web server environment** because it'll be hosting a node.js app. Give it a name, you might use some domain name, choose node.js as platform and for now choose sample application, we'll be replacing it with our code using CodePipeline. When created continue to the next step.
 
 3. My application is just a simple website with [index.html](./index.html), [package.json](./package.json) and [app.js](./app.js). Push those files to the CodeCommit repository. 
 

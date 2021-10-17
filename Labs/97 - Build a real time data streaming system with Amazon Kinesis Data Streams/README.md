@@ -38,7 +38,7 @@
 * **IAM**
 
 ## Lab description
-An application upploads text files to S3 Bucket. Whenever a file is uploaded to the bucket a Lambda function get triggered. Lambda function reads the content of the file and pushes the data to the Kinesis data stream. There are two consumers which consume the data from the stream.
+An application uploads text files to S3 Bucket. Whenever a file is uploaded to the bucket a Lambda function get triggered. Lambda function reads the content of the file and pushes the data to the Kinesis data stream. There are two consumers which consume the data from the stream.
 * **Creating Lambda functions and setting up Triggers**
 * **Creating Kinesis data stream**
 * **Setting Lambda functions as consumers of Kinesis data stream**
@@ -64,11 +64,11 @@ An application upploads text files to S3 Bucket. Whenever a file is uploaded to 
   Give it an adequate name, we will attach this Role to Lambda in next steps.
 2. Create Kinesis Data Stream. Set Number of open shards to 1. After creation enable server-side encryption in Configuration.
 3. Create a S3 Bucket. Enable Bucket Versioning and server-side encryption with Amazon S3 key. 
-4. Create Lambda function called **"producer"**, select Node.js as runtime, as execution role use the one created in step 1. [producer.js](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/Labs/97%20-%20Build%20a%20real%20time%20data%20streaming%20system%20with%20Amazon%20Kinesis%20Data%20Streams/producer.js) reads the data from newly uploaded S3 object and sends that data to eralier created Kinesis data stream.
-5. Create event notification in S3 Bucket vreated earlier, set the suffix for '.txt' type of objects. As event types choos 'All object create events' and as Destination choose the 'producer' Lambda function. This will trigger Lambda each time new object will be uploaded.
+4. Create Lambda function called **"producer"**, select Node.js as runtime, as execution role use the one created in step 1. [producer.js](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/Labs/97%20-%20Build%20a%20real%20time%20data%20streaming%20system%20with%20Amazon%20Kinesis%20Data%20Streams/producer.js) reads the data from newly uploaded S3 object and sends that data to earlier created Kinesis data stream.
+5. Create event notification in S3 Bucket created earlier, set the suffix for '.txt' type of objects. As event types choose 'All object create events' and as Destination choose the 'producer' Lambda function. This will trigger Lambda each time new object will be uploaded.
 6. Create two consumer Lambda functions:
   * [consumer1](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/Labs/97%20-%20Build%20a%20real%20time%20data%20streaming%20system%20with%20Amazon%20Kinesis%20Data%20Streams/consumer1.js) - Node.js as runtime and attach existing role created earlier. This function will log to the console the received data. Add trigger and choose the created Kinesis stream.
-  * [consumer2](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/Labs/97%20-%20Build%20a%20real%20time%20data%20streaming%20system%20with%20Amazon%20Kinesis%20Data%20Streams/consumer2.js) - similiar to the first one, this one will log the data to the console. Ass Trigger choose kinesis stream.
+  * [consumer2](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/Labs/97%20-%20Build%20a%20real%20time%20data%20streaming%20system%20with%20Amazon%20Kinesis%20Data%20Streams/consumer2.js) - similar to the first one, this one will log the data to the console. Ass Trigger choose kinesis stream.
 7. Upload a text file to S3 Bucket. This will trigger the **producer** Lambda. To check the event logs go to CloudWatch and under Logs check if the producer logged it events. The consumer Lambdas should also log the events with the text from the data stream.
  
 

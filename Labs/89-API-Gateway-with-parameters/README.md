@@ -10,7 +10,7 @@
   <h3 align="center">100 days in Cloud</h3>
 
   <p align="center">
-    Building a REST API Gateway with apth and query string parameters
+    Building a REST API Gateway with path and query string parameters
     <br />
     Lab 89
     <br />
@@ -45,7 +45,7 @@
 ---
 
 ## Lab description
-This lab practises on creating an API Gateway with path and query string parameters that will be integrated with Lambda function
+This lab practice's on creating an API Gateway with path and query string parameters that will be integrated with Lambda function
 
 * **Create a Lambda Function**
 * **Create API Gateway**

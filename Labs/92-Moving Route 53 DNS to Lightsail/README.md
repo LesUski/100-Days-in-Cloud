@@ -8,7 +8,7 @@
   <h3 align="center">100 days in Cloud</h3>
 
   <p align="center">
-    Moving Route 53 DNS Hosted Zone to Lightsail
+    Moving Route 53 DNS Hosted Zone to LightSail
     <br />
     Lab 92
     <br />
@@ -46,7 +46,7 @@ Domains registered in Route 53 will have an automatically activated Hosted Zone,
 
 ​			:credit_card: costs 0.50$ per hosted zone a month (up to 25 hosted zones)
 
-​	**Ligtsail DNS Zone:**
+​	**LightSail DNS Zone:**
 
 ​			:credit_card: 3 DNS zones are free and you can create unlimited records for each DNS zone
 
@@ -55,7 +55,7 @@ Domains registered in Route 53 will have an automatically activated Hosted Zone,
 
 
 * **Registering a domain in Route 53**
-* **Create Ligtsail instance**
+* **Create LightSail instance**
 * **Create DNS hosting zone in Lightsail**
 * **Change Name servers for registered domain**
 * **Create records in Lightsail hosting zone**

@@ -44,12 +44,12 @@
 ---
 
 ## Lab description
-Lab practises creating VPC, subnets, an Internet Gateway, a route table and configuring these services to work togheter. Then EC2 instance will be launched into the VPC and a page hosted on that instance using AWS CLI commands. Lab includes:
+Lab practice's creating VPC, subnets, an Internet Gateway, a route table and configuring these services to work together. Then EC2 instance will be launched into the VPC and a page hosted on that instance using AWS CLI commands. Lab includes:
 
 * **Usage of AWS CLI**
 * **Creating EC2 Instances**
 * **Creating VPCs, Internet Gateway, Route Table**
-* **Allocating and assining Elastic IP address to the EC2 Instance**
+* **Allocating and assigning Elastic IP address to the EC2 Instance**
 * **Creating subnets and Security Group Rules**
 
 ---
@@ -187,7 +187,7 @@ aws ec2 create-vpc  --cidr-block 10.1.0.0/16 --region us-east-1
     aws ec2 associate-address --instance-id i-0b1f210708cc97bbf --allocation-id eipalloc-06387267b6f8733c2 --region us-east-1
     ```
 
-    Go to the PublicIp address and chaeck if everything works.
+    Go to the PublicIp address and check if everything works.
 
 18. Don't forget to stop the instances:
 
@@ -225,7 +225,7 @@ aws ec2 create-vpc  --cidr-block 10.1.0.0/16 --region us-east-1
     aws ec2 delete-security-group --group-id sg-0770cff403a4005c7 --region us-east-1
     ```
 
-    This way clean-up proccess would be complete.
+    This way clean-up process would be complete.
 
 ### Lab files
 

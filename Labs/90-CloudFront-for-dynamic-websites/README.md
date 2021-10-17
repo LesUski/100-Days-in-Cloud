@@ -108,7 +108,7 @@ In this lab a CloudFront distribution will be created, that will distribute a pu
 
    ![image-20211002115053413](img/indexsite2.png)
 
-3. Create a Target Groups. Under **Basic configuration** select **Instances**, give a name, choose HTTP as protocol and default VPC. Configure health check path as **/index.php**. Then:![Skärmbild 2021-10-02 115338](C:\Users\lesze\OneDrive\Documents\AWS\100-Days-in-Cloud\100-Days-in-Cloud\Labs\90-CloudFront-for-dynamic-websites\img\Skärmbild 2021-10-02 115338.png)
+3. Create a Target Groups. Under **Basic configuration** select **Instances**, give a name, choose HTTP as protocol and default VPC. Configure health check path as **/index.php**. 
 
    Register the earlier created Instances as targets. 
 
@@ -116,7 +116,7 @@ In this lab a CloudFront distribution will be created, that will distribute a pu
 
    ![targetgroup](img/targetgroup.png)
 
-   Now the Load Balancer has a DNS name that you can naviagate to and it'll will aqually splitt the traffic between the two instances.![loadbalancer](img/loadbalancer.png)
+   Now the Load Balancer has a DNS name that you can navigate to and it'll will equally split the traffic between the two instances.![loadbalancer](img/loadbalancer.png)
 
 5. Create the CloudFront Distribution. Choose the **Load balancer** name as a Origin domain. Leave all as default and scroll down to ![cachekeyorigin](img/cachekeyorigin.png)
 
@@ -124,7 +124,7 @@ In this lab a CloudFront distribution will be created, that will distribute a pu
 
    ![cloudfront](img/cloudfront.png)
 
-6. Now that the distribution is deployed it's time for a clean-up. Delete EC2 Instances, Load Balance and CloudFront distriubtion.
+6. Now that the distribution is deployed it's time for a clean-up. Delete EC2 Instances, Load Balance and CloudFront distribution.
 
    
 ### Lab files

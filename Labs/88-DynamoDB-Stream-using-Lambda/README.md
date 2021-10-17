@@ -67,7 +67,7 @@ In this lab a DynamoDB table will be created and some item put in. Then S3 bucke
 ---
 
 ### Lab steps
-1. Create DynamoDB Table. Create a Partition key called _id_ of type string. Add couple of items to the table, with aditional attributes.
+1. Create DynamoDB Table. Create a Partition key called _id_ of type string. Add couple of items to the table, with additional attributes.
 
 2. Create a S3 Bucket for the incoming files. Note buckets name.
 

@@ -47,7 +47,7 @@
 ---
 
 ## Lab description
-In this lab I will create a backend of a website counter. It'll be backed with DynamoDB table, Lambda function and calls made to API. When API call is made a Lambda fuction will increment the value in the table and return the latest value.
+In this lab I will create a backend of a website counter. It'll be backed with DynamoDB table, Lambda function and calls made to API. When API call is made a Lambda function will increment the value in the table and return the latest value.
 
 
 * **Create a Lambda Function**
@@ -69,7 +69,7 @@ In this lab I will create a backend of a website counter. It'll be backed with D
 ---
 
 ### Lab steps
-1. Create a DynamoDB table, choose **On Demand** to lower the cost, but if you still are under free-tier choose **Provisioned**. Give your table a name and provide a **Primary key**. When table goes to **Active** status create a item in the table either programmaticly or through the console, the important part is that you provide your primary key and additional Attribute of type **Number** with some meaningful name for example _visits_. Set _visits_ to 0.
+1. Create a DynamoDB table, choose **On Demand** to lower the cost, but if you still are under free-tier choose **Provisioned**. Give your table a name and provide a **Primary key**. When table goes to **Active** status create a item in the table either programmatically or through the console, the important part is that you provide your primary key and additional Attribute of type **Number** with some meaningful name for example _visits_. Set _visits_ to 0.
 
    ![table](img/table.png)
 

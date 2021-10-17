@@ -40,7 +40,7 @@
 ---
 
 ## Lab description
-Purpose of this lab is to create an React app hosted in S3 bucket that'll be a static website for cloudofthings.net. To improve the accesibility and get better performance the website will be distributed by CloudFormation.
+Purpose of this lab is to create an React app hosted in S3 bucket that'll be a static website for cloudofthings.net. To improve the accessibility and get better performance the website will be distributed by CloudFormation.
 * **Creating and hosting static website in S3**
 * **Creating simple React website**
 * **Creating records in Route 53**
@@ -82,7 +82,7 @@ Purpose of this lab is to create an React app hosted in S3 bucket that'll be a s
   npx create-react-app demo-app
 ```
 This will download and create app called *demo-app* in your working directory.
-1. Go into the demo-app fodler and run
+1. Go into the demo-app folder and run
 ```
   npm start
 ```
@@ -135,7 +135,7 @@ You might need a policy granting you user \*allow\* effects for some actions:
 }
 ```
 
-It might be needed even if you use an user with **AdministratorAccess** policy attached to it. And disable the **Block Public Access settings for this account** because this has higher priority then any other policicies.
+It might be needed even if you use an user with **AdministratorAccess** policy attached to it. And disable the **Block Public Access settings for this account** because this has higher priority then any other policies.
 
 5. In properties change the **static website hosting** to enabled.
 
@@ -148,7 +148,7 @@ Next part is the deployment of the app in the CloudFront.
 Validate the certificate (either DNS, simpler and integrated in Route53 or email), this might take a while.
 2. Go to CloudFront and create distribution. As _Origin domain_ you need to copy in the address from S3.Don't use the auto-fill option, those are incorrect. You'll find that address in the **Static website hosting** section of your bucket. When in S3 edit the _Protocol_ to **https**. 
 In order to support HTTPS change the _Viewer protocol policy_ to **Redirect HTTP to HTTPS**. Under __Custom SSL certificate_ choose the earlier created certificate in AWS Certificate Manager.
-3. In Route 53 update the _A records_ that they point to the adresses provided in Cloud Front so _Route traffic to_ **Alias to CloudFront distribution** and paste the adress you see under CloudFront distribution **Domain name**.
+3. In Route 53 update the _A records_ that they point to the addresses provided in Cloud Front so _Route traffic to_ **Alias to CloudFront distribution** and paste the address you see under CloudFront distribution **Domain name**.
 
 ### Here is the website :
 :page_facing_up:

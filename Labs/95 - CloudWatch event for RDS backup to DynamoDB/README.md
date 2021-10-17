@@ -36,12 +36,12 @@
 * **Lambda**
 
 ## Lab description
-Purpose of this lab is to create an CloudWatch Event Rule that will trigger the Lambda function on a schedule. Lambdas code will querry RDS MySQL database and will backup found entries into DynamoDB table. MySQL Workbench will be used for connection and querring the RDS database. 
+Purpose of this lab is to create an CloudWatch Event Rule that will trigger the Lambda function on a schedule. Lambdas code will query RDS MySQL database and will backup found entries into DynamoDB table. MySQL Workbench will be used for connection and querying the RDS database. 
 * **Creating RDS MySQL database**
 * **Creating Security Group for RDS**
 * **Creating Role in IAM**
 * **CloudWatch Events**
-* **Creating and uploding Lambda code**
+* **Creating and uploading Lambda code**
 
 
 ### Lab date
@@ -87,14 +87,14 @@ SELECT * FROM students;
 ```
 
 6. Create [Lambda](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/Labs/95%20-%20CloudWatch%20event%20for%20RDS%20backup%20to%20DynamoDB/lambda_function.py) function, in Python and attach earlier created Role. Upload the zip file and change values for your database, user and DynamoDB in the code.
-7. Create a CloudWach Event and choose *scheduled* every minute and Lambda as a trigger. This will call Lambda function and create backup into DynamoDB table.
-8. Efter at least one minute you should see that those first three values should be populated in table by Lambda function. You can run additional MySQL querries to add more values and they will eventually get copied to the table. To see the items you need to choose the created table then **Items summary** -> **View items** -> **Run**.
+7. Create a CloudWatch Event and choose *scheduled* every minute and Lambda as a trigger. This will call Lambda function and create backup into DynamoDB table.
+8. After at least one minute you should see that those first three values should be populated in table by Lambda function. You can run additional MySQL queries to add more values and they will eventually get copied to the table. To see the items you need to choose the created table then **Items summary** -> **View items** -> **Run**.
 9. Delete all the created resources to avoid any extra costs.
 
 
  
 ### Lab files
-* [lambda_function.py](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/Labs/95%20-%20CloudWatch%20event%20for%20RDS%20backup%20to%20DynamoDB/lambda_function.py) - Lambda function triggered by CloudWatch Event, querries the RDS database and copies values into DynamoDB table
+* [lambda_function.py](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/Labs/95%20-%20CloudWatch%20event%20for%20RDS%20backup%20to%20DynamoDB/lambda_function.py) - Lambda function triggered by CloudWatch Event, queries the RDS database and copies values into DynamoDB table
 
 ### Acknowledgements
 * [whizlabs.com](https://www.whizlabs.com/)
