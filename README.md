@@ -107,6 +107,18 @@ List of Labs in the repository (will be growing as time passes towards the end o
 * [86-JavaScript-Visitors-Counter-with-API](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/86-JavaScript-Visitors-Counter-with-API)
 * [85-CICD-Deploy-App-CodePipeline-CodeBuild](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/85-CICD-Deploy-App-CodePipeline-CodeBuild)
 * [84-Static-Website-with-CloudFront-Distribution](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/84-Static-Website-with-CloudFront-Distribution)
+* [83-Provisioning-EC2-with-CloudFormation](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/83-Provisioning-EC2-with-CloudFormation)
+* [82-Lambda-triggered-from-SQS](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/82-Lambda-triggered-from-SQS)
+* [81-SAM-with-CodeDeploy](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/81-SAM-with-CodeDeploy)
+* [80-Amazon-Rekognition-CDK-deployed](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/80-Amazon-Rekognition-CDK-deployed)
+* [79-Create&Deploy-App-CodeDeploy-CodePipeline](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/79-Create%26Deploy-App-CodeDeploy-CodePipeline)
+* [78-Deploy-App-on-ECS-using-CodeDeploy](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/78-Deploy-App-on-ECS-using-CodeDeploy)
+* [77-Install-Python-Modules-Using-Cloud9](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/77-Install-Python-Modules-Using-Cloud9)
+* [76-ENI-Multiple-IPs-on-EC2](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/76-ENI-Multiple-IPs-on-EC2)
+* [75-Launch-Windows-EC2-and-connect-using-RDC](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/75-Launch-Windows-EC2-and-connect-using-RDC)
+* []()
+
+
 
 
 
