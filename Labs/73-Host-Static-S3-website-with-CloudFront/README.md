@@ -43,7 +43,7 @@
 ---
 
 ## Services Covered
-* ![CloudFront](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CloudFront.png) **CloudFront**
+* ![CloudFront](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/cloudfront.png) **CloudFront**
 * ![Lambda](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/AWS_Lambda.png) **Lambda**
 * ![S3](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/S3.png) **S3**
 * ![API](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/Api_Gateway.png) **API Gateway**
