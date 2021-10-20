@@ -67,7 +67,7 @@ I'm learning the automation type of deployment in AWS, and even though that AWS 
 
 2. Create a folder for you Terraform code. Create a terraform file with .tf extension (a tip: use Terraform extension in VSC, it will help you with proper formatting). I'll start small with deploying a S3 bucket:
 
-   ```json
+   ```
    provider "aws" {
      profile = "default"
      region  = "<<YOUR_REGION>>"
@@ -95,7 +95,7 @@ I'm learning the automation type of deployment in AWS, and even though that AWS 
 
 4. Now let's add more resources. I need a Security Group in my default VPC, allowing traffic on HTTP\HTTPS, add this code:
 
-   ```json
+   ```
    resource "aws_default_vpc" "default" {}
    
    resource "aws_security_group" "prod_web" {
@@ -136,7 +136,7 @@ I'm learning the automation type of deployment in AWS, and even though that AWS 
 
    ![ec2type](img/ec2type.jpg)
 
-   ```json
+   ```
    resource "aws_instance" "prod_web" {
        ami           = "ami-0a98eef3c13e97cd2"
        instance_type = "t3.micro"
