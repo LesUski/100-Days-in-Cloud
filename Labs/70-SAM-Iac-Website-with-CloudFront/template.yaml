@@ -48,7 +48,7 @@ Resources:
   MyRoute53Record:
     Type: "AWS::Route53::RecordSetGroup"
     Properties:
-      HostedZoneId: Z0499974483KJGB603VQ
+      HostedZoneId: <<--->>
       RecordSets:
         - Name: myprofile.cloudofthings.link
           Type: A
@@ -61,7 +61,7 @@ Resources:
     Properties:
       DistributionConfig:
         ViewerCertificate:
-          AcmCertificateArn: arn:aws:acm:us-east-1:797321539388:certificate/2e49c0ac-faac-4b40-af01-7ebb94f8e485
+          AcmCertificateArn: arn:aws:acm:us-east-1:<<--->>:certificate/<<--->>
           SslSupportMethod: sni-only
         Aliases:
           - myprofile.cloudofthings.link
