@@ -34,7 +34,7 @@
 ---
 
 ## Services Covered
-* ![EC2](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/AmazonEC2.jpg) **Amazon EC2**
+* ![EC2](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/AmazonEC2.png) **Amazon EC2**
 
 ---
 
