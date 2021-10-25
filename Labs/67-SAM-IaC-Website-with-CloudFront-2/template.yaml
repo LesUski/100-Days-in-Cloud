@@ -1,0 +1,147 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  cloud-resume-challenge
+
+  Sample SAM Template for cloud-resume-challenge
+
+Globals:
+  Function:
+    Timeout: 3
+
+Resources:
+
+  MyWebsite:
+    Type: "AWS::S3::Bucket"
+    Properties:
+      AccessControl: Private
+      WebsiteConfiguration:
+        IndexDocument: index.html
+      BucketName: myprofile.cloudofthings.net
+
+  BucketPolicy:
+    Type: "AWS::S3::BucketPolicy"
+    Properties:
+      PolicyDocument:
+        Id: WebPolicy
+        Version: 2012-10-17
+        Statement:
+          - Sid: PublicReadForGetBucketObjects
+            Effect: Allow
+            Principal:
+              AWS: !Sub "arn:aws:iam::cloudfront:user/CloudFront Origin Access Identity ${CloudFrontOriginAccessIdentity}"
+            Action: "s3:GetObject"
+            Resource: !Join
+              - ""
+              - - "arn:aws:s3:::"
+                - !Ref MyWebsite
+                - /*
+      Bucket: !Ref MyWebsite
+
+  CloudFrontOriginAccessIdentity:
+    Type: AWS::CloudFront::CloudFrontOriginAccessIdentity
+    Properties:
+      CloudFrontOriginAccessIdentityConfig:
+        Comment: "Serverless website in S3"
+
+  MyRoute53Record:
+    Type: "AWS::Route53::RecordSetGroup"
+    Properties:
+      HostedZoneId: Z0499974483KJGB603VQ
+      RecordSets:
+        - Name: myprofile.cloudofthings.link
+          Type: A
+          AliasTarget:
+            HostedZoneId: Z2FDTNDATAQYW2
+            DNSName: !GetAtt MyDistribution.DomainName
+
+  MyDistribution:
+    Type: AWS::CloudFront::Distribution
+    Properties:
+      DistributionConfig:
+        ViewerCertificate:
+          AcmCertificateArn: arn:aws:acm:us-east-1:797321539388:certificate/2e49c0ac-faac-4b40-af01-7ebb94f8e485
+          SslSupportMethod: sni-only
+        Aliases:
+          - myprofile.cloudofthings.link
+        DefaultCacheBehavior:
+          Compress: 'true'
+          ViewerProtocolPolicy: redirect-to-https
+          TargetOriginId: s3-website
+          DefaultTTL: 30
+          MinTTL: 1
+          MaxTTL: 86400
+          ForwardedValues:
+            QueryString: false
+        PriceClass: PriceClass_100
+        Origins:
+          - DomainName: !GetAtt MyWebsite.DomainName
+            Id: s3-website
+            S3OriginConfig:
+              OriginAccessIdentity:
+                Fn::Sub: 'origin-access-identity/cloudfront/${CloudFrontOriginAccessIdentity}'
+        Enabled: "true"
+        DefaultRootObject: index.html
+        HttpVersion: http2
+
+  GetCountFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: cloud-resume-challenge
+      CodeUri: get-function/
+      Handler: app.lambda_handler
+      Runtime: python3.9
+      Architectures:
+        - x86_64
+      Events:
+        HelloWorld:
+          Type: Api 
+          Properties:
+            Path: /get
+            Method: get
+
+  PutCountFunction:
+    Type: AWS::Serverless::Function 
+    Properties:
+      Policies:
+        - DynamoDBCrudPolicy:
+            TableName: cloud-resume-challenge
+      CodeUri: put-function/
+      Handler: app.lambda_handler
+      Runtime: python3.9
+      Architectures:
+        - x86_64
+      Events:
+        HelloWorld:
+          Type: Api
+          Properties:
+            Path: /put
+            Method: get
+
+  DynamoDBTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: cloud-resume-challenge
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: "ID"
+          AttributeType: "S"
+      KeySchema:
+        - AttributeName: "ID"
+          KeyType: "HASH"
+
+Outputs:
+  HelloWorldApi:
+    Description: "API Gateway endpoint URL for Prod stage for GetCountFunction function"
+    Value: !Sub "https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/hello/"
+  GetCountFunction:
+    Description: "GetCountFunction Lambda Function ARN"
+    Value: !GetAtt GetCountFunction.Arn
+  GetCountFunctionIamRole:
+    Description: "Implicit IAM Role created for GetCountFunction"
+    Value: !GetAtt GetCountFunctionRole.Arn
+  MyDistribution:
+    Description: "CloudFront distribution domain name"
+    Value: !GetAtt MyDistribution.DomainName
