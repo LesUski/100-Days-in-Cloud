@@ -50,6 +50,8 @@ Idea is to cover as many AWS architectures and services as possible in different
 * [AWS CLI](https://aws.amazon.com/cli/)
 * [Python](https://aws.amazon.com/developer/language/python/)
 * [AWS CloudFormation Templates](https://aws.amazon.com/cloudformation/resources/templates/)
+* [AWS SAM](https://aws.amazon.com/serverless/sam/)
+* [Terraform](https://www.terraform.io/)
 
 
 
@@ -71,6 +73,7 @@ Here’s a list of services used as a source of labs:
 And some free ones:
 * [AWS Hands-On repository](https://aws.amazon.com/getting-started/hands-on/) - free
 * ['Be a better dev' YouTube channel](https://www.youtube.com/c/BeABetterDev) - free
+* [Cloud Academy](https://cloudacademy.com/library/)
 
 ### Recommended prerequisites
 
@@ -116,6 +119,15 @@ List of Labs in the repository (will be growing as time passes towards the end o
 * [77-Install-Python-Modules-Using-Cloud9](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/77-Install-Python-Modules-Using-Cloud9)
 * [76-ENI-Multiple-IPs-on-EC2](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/76-ENI-Multiple-IPs-on-EC2)
 * [75-Launch-Windows-EC2-and-connect-using-RDC](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/75-Launch-Windows-EC2-and-connect-using-RDC)
+* [74-Blue-Green-Deployments-with-Elastic-Beanstalk](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/74-Blue-Green-Deployments-with-Elastic-Beanstalk)
+* [73-Host-Static-S3-website-with-CloudFront](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/73-Host-Static-S3-website-with-CloudFront)
+* [72-Terraform-launch-NGINX-on-EC2](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/72-Terraform-launch-NGINX-on-EC2)
+* [71-Amazon-Lex-create-a-bot](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/71-Amazon-Lex-create-a-bot)
+* [70-SAM-Iac-Website-with-CloudFront-1](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/70-SAM-Iac-Website-with-CloudFront-1)
+* [69-Highly-Available-Web-App-and-Bastion-Host-on-EC2](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/69-Highly-Available-Web-App-and-Bastion-Host-on-EC2)
+* [68-Storing-ELB-Access-Logs-in-S3-bucket](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/68-Storing-ELB-Access-Logs-in-S3-bucket)
+* [67-SAM-IaC-Website-with-CloudFront-2](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/67-SAM-IaC-Website-with-CloudFront-2)
+* [66-Data-in-S3-for-Analytics-in-Athena](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/66-Data-in-S3-for-Analytics-in-Athena)
 * []()
 
 
@@ -130,6 +142,10 @@ Distributed under the MIT License.
 
 <!-- CONTACT -->
 ## Contact
+
+[My blog](cloudofthings.net)
+
+[Cloud Resume Challenge](profile.cloudofthings.net)
 
 Leszek Ucinski [![LinkedIn][linkedin-shield]][linkedin-url]
 
