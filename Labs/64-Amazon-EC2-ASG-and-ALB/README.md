@@ -118,7 +118,7 @@ In this lab I will create an **Auto Scaling Group** and place it behind an **App
    ![cpu](img/cpu.jpg)
 
    
-
+---
 
 ### Lab files
 * 
