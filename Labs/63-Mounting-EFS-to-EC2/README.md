@@ -63,9 +63,9 @@ In this lab I will create an Elastic File System that will span across an entire
 ---
 
 ### Lab steps
-1. In EC2 create a **Security Group** for the that will allow access to EFS. It should allow inbound acces of type **NFS** from Instances Security group on port 2049. 
+1. In EC2 create a **Security Group** for the that will allow access to EFS. It should allow inbound access of type **NFS** from Instances Security group on port 2049. 
 
-2. Create file system in **EFS**. Keep the deafult VPC and Regional type, on the **Network access** tab replace the *deafult* SG's with the one created in previous step.
+2. Create file system in **EFS**. Keep the default VPC and Regional type, on the **Network access** tab replace the *deafult* SG's with the one created in previous step.
 
    <img src="img/efs_network.jpg" alt="efsnetwork" style="zoom:67%;" />
 
@@ -129,7 +129,7 @@ In this lab I will create an Elastic File System that will span across an entire
 
    ![secondsec2](img/secondec2.jpg)
 
-   It should display the packege downloaded in the first Instance.
+   It should display the package downloaded in the first Instance.
 
    
 ---
