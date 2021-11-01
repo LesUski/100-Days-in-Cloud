@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="img/">
-    <img src="img/lab61_diagram.jpg" alt="cloudofthings" width="462" height="292">
+    <img src="img/lab60_diagram.jpg" alt="cloudofthings" width="371" height="425">
   </a>
   <h3 align="center">100 days in Cloud</h3>
 <p align="center">
@@ -36,13 +36,13 @@
 ---
 
 ## Services Covered
-* ![Dynamodb](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/dynamodb.png) **DynamoDB**
-* ![lambda](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/AWS_Lambda.png) **AWS Lambda**
-
+* ![elasticbeanstalk](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/ElasticBeanstalk.png) **Elastic Beanstalk**
+* ![codepipeline](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CodePipline.png) **Code Pipeline**
+* ![s3](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/S3.png) **S3**
 ---
 
 ## Lab description
-This lab walks you through the Deployment of sample Node.js application. Then the code gets updated, uploaded into S3 bucket and used as a source for CodePipeline pipeline. The pipeline will deploy the updated code into a Elastic Beanstalk Environment and update the running app.
+This lab walks you through the Deployment of sample Node.js application in Elastic Beanstalk. Then the code gets updated, uploaded into S3 bucket and used as a source for CodePipeline pipeline. The pipeline will deploy the updated code into a Elastic Beanstalk Environment and update the running app.
 
 
 ---
