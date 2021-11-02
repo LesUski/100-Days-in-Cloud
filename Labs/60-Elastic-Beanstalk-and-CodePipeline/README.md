@@ -72,7 +72,7 @@ This lab walks you through the Deployment of sample Node.js application in Elast
 
    ![nodejsapp](img/lab60_nodejsapp.jpg)
    
-2. Navigate to S3 and enable versioning for a new bucket. Then upload the updated version of the application. In my case it's just changed background color of this app. You'll find the update files [here](/nodejs-v2-blue). Then copy the object key. 
+2. Navigate to S3 and enable versioning for a new bucket. Then upload the updated version of the application. In my case it's just changed background color of this app. You'll find the update files [here](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/60-Elastic-Beanstalk-and-CodePipeline/nodejs-v2-blue). Then copy the object key. 
 
 3. Create a CodePipeline pipeline. As a source provider choose Amazon S3. Then the bucket with the updated app and it's key. Skip build stage. As a deploy provider choose Elastic Beanstalk and choose the earlier created environment. 
 
@@ -93,7 +93,7 @@ This lab walks you through the Deployment of sample Node.js application in Elast
 ---
 
 ### Lab files
-* [nodejs-v2-blue](/nodejs-v2-blue) - updated version of the app, used as a source for Pipeline
+* [nodejs-v2-blue](https://github.com/CloudedThings/100-Days-in-Cloud/tree/main/Labs/60-Elastic-Beanstalk-and-CodePipeline/nodejs-v2-blue) - updated version of the app, used as a source for Pipeline
 ---
 
 ### Acknowledgements
