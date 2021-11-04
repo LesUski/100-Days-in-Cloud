@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="img/">
-    <img src="img/lab58_diagram.jpg" alt="cloudofthings" width="532" height="252">
+    <img src="img/lab58_diagram.jpg" alt="cloudofthings" width="531" height="312">
   </a>
   <h3 align="center">100 days in Cloud</h3>
 <p align="center">
