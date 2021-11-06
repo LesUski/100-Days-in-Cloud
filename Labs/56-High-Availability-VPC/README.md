@@ -70,7 +70,7 @@ In this lab I will create a new **VPC** with a **private and public subnets**. T
 ---
 
 ### Lab steps
-1. CreCreate Internet Gateway a **VPC** with a **CIDR block**: ***10.0.0.0/16\***.
+1. Create Internet Gateway a **VPC** with a **CIDR block**: ***10.0.0.0/16\***.
 
 2. Create public and private subnets in VPC created in step 1. The first one will be public with CIDR block:***10.0.0.0/24***. When created, mark that subnet and go to *Actions*, click on *Modify auto-assign IP settings* and enable auto-assign of IPv¤ public address. Create one more subnet, this time private one.
 
