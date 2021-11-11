@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="img/">
-    <img src="img/lab51_diagram.jpg" alt="cloudofthings" width="395" height="471">
+    <img src="img/lab50_diagram.jpg" alt="cloudofthings" width="395" height="471">
   </a>
   <h3 align="center">100 days in Cloud</h3>
 <p align="center">
@@ -35,7 +35,7 @@
 ---
 
 ## Services Covered
-* ![lambda](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/AWS_Lambda.png) **VPC**
+* ![lambda](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/AWS_Lambda.png) **Lambda**
 * ![cloudwatch](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CloudWatch.png) **CloudWatch**
 * ![eventbridge](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/EventBridge.png) **EventBridge**
 ---
@@ -48,9 +48,9 @@ In this Lab I will create a Lambda function. Then I will configure EventBridge t
 
 ### Learning Objectives
 
-* Create Lambda functions
-* Run Lambda functions on a schedule using EventBridge
-* Monitor Lambda functions using CloudWatch
+* Create Lambda function
+* Run Lambda function on a schedule using EventBridge
+* Monitor Lambda function using CloudWatch
 
 ### Lab date
 11-11-2021
