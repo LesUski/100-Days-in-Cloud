@@ -4,11 +4,11 @@
 
 <p align="center">
   <a href="img/">
-    <img src="img/lab47_diagram.jpg" alt="cloudofthings" width="481" height="601">
+    <img src="img/lab45_diagram.jpg" alt="cloudofthings" width="568" height="681">
   </a>
   <h3 align="center">100 days in Cloud</h3>
 <p align="center">
-    Using Terraform create VPC with subnets, Application Load Balancer with EC2 Instance running NGINX server
+    Using Terraform create VPC with subnets, Application Load Balancer with EC2 Instance running React App, API and MongoDB
     <br />
     Lab 45
     <br/>
@@ -43,9 +43,36 @@
 
 Create an advanced AWS VPC spanning 2 AZs with both public and private subnets. An internet gateway and NAT gateway will be deployed into it. Public and private route tables will be established. An application load balancer (ALB) will be installed which will load balance traffic across an auto scaling group (ASG) of Nginx web servers. Security groups will be created and deployed to secure all network traffic between the various components.
 
+Private subnets will host the frontend application and ALB will distribute traffic to them. Application includes bootstrapped React app with API backed with a MongoDB instance. The public subnet will host bastion host for connectivity.
+
 ## Project structure
 ```
-├── ec2.userdata
+├── main.tf
+├── modules
+│   ├── application
+│   │   ├── main.tf
+│   │   ├── outputs.tf
+│   │   └── vars.tf
+│   ├── bastion
+│   │   ├── main.tf
+│   │   ├── outputs.tf
+│   │   └── vars.tf
+│   ├── network
+│   │   ├── main.tf
+│   │   ├── outputs.tf
+│   │   └── vars.tf
+│   ├── security
+│   │   ├── main.tf
+│   │   ├── outputs.tf
+│   │   └── vars.tf
+│   └── storage
+│       ├── install.sh
+│       ├── main.tf
+│       ├── outputs.tf
+│       └── vars.tf
+├── outputs.tf
+├── terraform.tfvars
+└── variables.tf├── ec2.userdata
 ├── main.tf
 ├── outputs.tf
 ├── terraform.tfvars
@@ -58,9 +85,9 @@ Create an advanced AWS VPC spanning 2 AZs with both public and private subnets. 
 * Create Terraform template to launch resources
 * Create AWS environment including VPC, subnets, EC2 instance, route table, internet gateway
 * Provide EC2 userdata from a separate file
-* Use ***cidrsubnet()*** terraform function
+* Use terraform modules for application, network, bastion, storage and security layers
 
-### Lab date
+### Lab date 
 16-11-2021
 
 ---
@@ -82,15 +109,13 @@ Create an advanced AWS VPC spanning 2 AZs with both public and private subnets. 
 
    
 
-2. Launch the terraform environment execution by running
+2. Plan the terraform environment execution by running
 
    ```
    terraform plan
    ```
 
-   ![plan](img/lab47_plan.jpg)
-
-   The main template includes creating a new VPC with 4 subnets (two public and two private), an internet gateway, elastic ip for nat gateway, route tables, security groups, application load balancer, launch template.
+   
 
 3. Deploy the resources by running
 
@@ -98,31 +123,34 @@ Create an advanced AWS VPC spanning 2 AZs with both public and private subnets. 
    terraform apply
    ```
 
-   And paste your IP for SSH connection.
+   When terraform completes there should be 4 instances running
 
-   ![applycomplete](img/lab47_applycomplete.jpg)
+   <img src="img/lab45_instances.jpg" alt="instances" style="zoom:80%;" />
 
-   Alright! Now the two webserver instances are running behind an ALB. 
+   
 
-   ![instances](img/lab47_instances.jpg)
+   Navigate to the DNS name found in the Load Balancers tab. You should be able to vote on your favorite language. Votes are send by executing a Ajax request to API and logged in the MongoDB database.
 
-   Navigate to the ALB's DNS name to verify that nginx responses.
+   <img src="img/lab45_website.jpg" alt="website" style="zoom:70%;" />
 
-   ![nginx](img/lab47_nginx.jpg)
+4. Try connecting to the bastion host and jump over to the MongoDB instance. I use PuTTY to connect to the bastion's public IP and use *Allow agent forwarding* option to connect to database instance.
 
-4. To wrap-up run the destroy command to clean-up the environment.
+   
+   
+4. Delete all the resources by running:
 
    ```
    terraform destroy
    ```
 
    
+   
+   
 
 ### Lab files
 * [main.tf](main.tf)
 * [variables.tf](main.tf)
 * [outputs.tf](main.tf)
-* [ec2.userdate](ec2.userdata)
 ---
 
 ### Acknowledgements

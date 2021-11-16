@@ -38,7 +38,7 @@
 ---
 
 ## Services Covered
-* ![EC2](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/Amazon_EC2.png) **EC2**
+* ![EC2](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/AmazonEC2.png) **EC2**
 ---
 
 ## Lab description
