@@ -40,7 +40,7 @@
 ## Services Covered
 * ![CloudTrail](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CloudTrail.png) **CloudTrail**
 * ![CloudWatch](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CloudWatch.png) **CloudWatch**
-* ![ec2](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/CAmazonEC2.png) **EC2**
+* ![ec2](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/AmazonEC2.png) **EC2**
 ---
 
 ## Lab description
