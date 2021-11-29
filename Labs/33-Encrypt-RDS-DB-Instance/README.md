@@ -34,7 +34,7 @@
 ---
 
 ## Services Covered
-* ![rds](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/RDS.png) **RDS**
+* ![rds](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/RDS.jpg) **RDS**
 
 ---
 
@@ -61,7 +61,7 @@ In this lab a database created without the encryption will be encrypted.
 ---
 
 ### Lab steps
-1. In RDS dashboard create a MySQL instance of a database, but leave the **Enablge encryption** field unchecked. 
+1. In RDS dashboard create a MySQL instance of a database, but leave the **Enable encryption** field unchecked. 
 
    ![unencrypted](img/lab33_unencrypted.jpg)
 
