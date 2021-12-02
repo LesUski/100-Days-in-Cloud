@@ -134,7 +134,7 @@
 
    <img src="img/lab30_lambda.jpg" alt="lambda" style="zoom:80%;" />
 
-6. **Upload an image file** to the *uploads* bucket. I uploaded three files that were > 1MB and in result the resized files in *resized* bucket were muck smaller:
+6. **Upload an image file** to the *uploads* bucket. I uploaded three files that were > 1MB and in result the resized files in *resized* bucket are much smaller:
 
    <img src="img/lab30_s3_resized.jpg" alt="s3-resized" style="zoom:80%;" />
 
