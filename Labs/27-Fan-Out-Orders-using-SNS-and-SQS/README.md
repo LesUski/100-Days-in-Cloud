@@ -126,5 +126,5 @@
 ---
 
 ### Acknowledgements
-* [cloud academy](https://cloudacademy.com/lab/manage-message-queue-amazon-sqs/?context_id=2977&context_resource=lp)
+* [cloud academy](https://cloudacademy.com/lab/fan-out-orders-with-sns-sqs/?context_id=2977&context_resource=lpp)
 
