@@ -44,7 +44,7 @@
 
 ## Lab description
 
-In this lab i will configure multi layered VPC security and launch 2 EC2 instances.
+In this lab I will configure multi layered VPC security and launch 2 EC2 instances.
 
 
 ---
@@ -112,7 +112,7 @@ In this lab i will configure multi layered VPC security and launch 2 EC2 instanc
 
     <img src="img/lab25_ping_private_instance.jpg" alt="ping-private-instance" style="zoom:80%;" />
 
-    1. Press [Ctrl] + C again to cancel the process.
+   Press [Ctrl] + C again to cancel the process.
 
     
 
