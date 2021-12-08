@@ -1,0 +1,4 @@
+cognito:username,name,given_name,family_name,middle_name,nickname,preferred_username,profile,picture,website,email,email_verified,gender,birthdate,zoneinfo,locale,phone_number,phone_number_verified,address,updated_at,cognito:mfa_enabled
+John,,John,Doe,,,,,,,johndoe@example.com,TRUE,,02/01/1985,,,+12345550100,TRUE,123 Any Street,,FALSE
+Jane,,Jane,Roe,,,,,,,janeroe@example.com,TRUE,,01/01/1985,,,+12345550199,TRUE,100 Main Street,,FALSE
+Samuel,,Samuel,Elliott,L,Sammo,,,,,sammo@example.com,TRUE,M,07/04/1776,,,+19165551234,TRUE,100 Confluence Road,,FALSE
