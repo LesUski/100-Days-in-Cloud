@@ -33,7 +33,7 @@
 * ![ecs](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/ECS.jpg) **ECS**
 * ![ecr](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/ECR.png) **ECR**
 * ![s3](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/S3.png) **S3**
-* ![ec2](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/AmazonEC2.png) **S3**
+* ![ec2](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/AmazonEC2.png) **EC2**
 
 ---
 
