@@ -30,7 +30,7 @@
 ---
 
 ## Services Covered
-* ![rds](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/RDS.png) **RDS**
+* ![rds](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/RDS.jpg) **RDS**
 * ![lambda](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/AWS_Lambda.png) **Lambda**
 
 ---
