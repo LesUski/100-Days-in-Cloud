@@ -31,7 +31,7 @@
 
 ## Services Covered
 * ![s3](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/S3.png) **S3**
-* ![lambda](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/AW_Lambda.png) **Lambda**
+* ![lambda](https://github.com/CloudedThings/100-Days-in-Cloud/blob/main/images/AWS_Lambda.png) **Lambda**
 
 ---
 
