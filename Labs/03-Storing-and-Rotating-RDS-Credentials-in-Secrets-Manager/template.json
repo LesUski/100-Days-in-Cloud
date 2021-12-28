@@ -1,0 +1,39 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: "How to create and retrieve secrets securely using an AWS CloudFormation template"
+
+Parameters:
+  DatabaseInstanceId:
+    Type: String
+    Default: lab-instance-1
+  DatabaseInstanceHost:
+    Type: String
+  SecretName:
+    Type: String
+  RotationFunctionArn:
+    Type: String
+
+Resources:
+  MyRDSInstanceRotationSecret:
+    Type: "AWS::SecretsManager::Secret"
+    Properties:
+      Name: !Ref SecretName
+      Description: This is the secret for my RDS instance
+      GenerateSecretString:
+        ExcludeCharacters: "\"@/\\"
+        GenerateStringKey: password
+        PasswordLength: 16
+        SecretStringTemplate: !Sub "{\"username\": \"admin\", \"engine\": \"mysql\", \"host\": \"${DatabaseInstanceHost}\"}"
+  MySecretRotationSchedule:
+    Type: "AWS::SecretsManager::RotationSchedule"
+    DependsOn: SecretRDSInstanceAttachment
+    Properties:
+      RotationLambdaARN: !Ref RotationFunctionArn
+      RotationRules:
+        AutomaticallyAfterDays: 30
+      SecretId: !Ref MyRDSInstanceRotationSecret
+  SecretRDSInstanceAttachment:
+    Type: "AWS::SecretsManager::SecretTargetAttachment"
+    Properties:
+      SecretId: !Ref MyRDSInstanceRotationSecret
+      TargetId: !Ref DatabaseInstanceId
+      TargetType: "AWS::RDS::DBInstance"
